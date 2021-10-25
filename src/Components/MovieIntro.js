@@ -1,5 +1,5 @@
 import React from 'react'
-import movieIntroImg from '../Images/Raya_and_the_Last_Dragon_logo.png'
+import movieIntroImg from '../Assets/Images/Raya_and_the_Last_Dragon_logo.png'
 import './MovieIntro.css'
 
 function MovieIntro() {

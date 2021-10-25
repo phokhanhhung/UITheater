@@ -1,0 +1,84 @@
+.bodyHomeMovie {
+  position: relative;
+}
+
+.bodyHomeMovie img{
+  object-fit: contain;
+  display: block;
+  outline: 7px solid rgba(255, 255, 255, 0.25);
+  outline-offset: -7px;
+}
+
+.bodyHomeMovie .bodyHomeMovie_infor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* .bodyHomeMovie:hover {
+  opacity: 0.25;
+} */
+
+.bodyHomeMovie:hover .bodyHomeMovie_infor {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.bodyHomeMovie_infor h3 {
+  font-size: 16;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  color: #F5859D;
+}
+
+.bodyHomeMovie_infor h4 {
+  color: #98D4DC;
+  text-align: left;
+  width: 100%;
+}
+
+.bodyHomeMovie_infor h4 span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 12px;
+  background-color: #98D4DC;
+  color: #49526D;
+  text-align: center;
+  line-height: 18px;
+  font-size: 10px;
+  margin-right: 4px;
+}
+
+.bodyHomeMovie_infor p {
+  text-align: justify;
+  color: #fff;
+}
+
+.bodyHomeMovie_infor button {
+  width: 120px;
+  height: 30px;
+  color: #49526D;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+}
+
+.bodyHomeMovie_infor button:hover{
+  cursor: pointer;
+}
+
+.bodyHomeMovie_infor .bodyHomeMovie_buy {
+  background-color: #F5859D;
+}
+
+.bodyHomeMovie_infor .bodyHomeMovie_more {
+  background-color: #ECDEE3;
+}
+
