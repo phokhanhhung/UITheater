@@ -1,0 +1,32 @@
+.bodyHomeSuggestMovies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -60px;
+}
+
+.bodyHomeSuggest_wrap {
+  overflow-x: hidden;
+}
+
+.bodyHomeSuggest_list {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  transition: all ease 2s;
+}
+
+.bodyHomeSuggestMovies > i {
+  font-size: 60px;
+  color: #98D4DC;
+  opacity: 0.25;
+  margin: 0 15px
+}
+
+.bodyHomeSuggestMovies > i:hover {
+  cursor: pointer;
+}

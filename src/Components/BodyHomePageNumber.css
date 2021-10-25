@@ -1,0 +1,38 @@
+.bodyHomePageNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.bodyHomePageNumber_list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+} 
+
+.bodyHomePageNumber > i {
+  width: 50px;
+  font-size: 25px;
+  text-align: center;
+  color: #f5859d;
+  cursor: pointer;
+}
+
+.bodyHomePageNumber_list li {
+  width: 28px;    
+  height: 28px;
+  line-height: 28px;  
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bodyHomePageNumber_list li:nth-child(2) {
+  border-radius: 15px;
+  background-color: #f5859d;
+  color: #000;
+}
+

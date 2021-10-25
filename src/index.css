@@ -13,11 +13,3 @@ code {
     monospace;
 }
 
-html {
-  height: 100vw;
-}
-
-#root{
-  height: 100%;
-  box-sizing: border-box;
-}
