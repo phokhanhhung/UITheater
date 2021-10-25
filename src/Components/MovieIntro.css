@@ -1,0 +1,65 @@
+.movie-intro {
+    padding-top: 200px;
+    padding-left: 85px;
+}
+
+.movieIntroImg {
+    width: 269px;
+    height: 150px;
+}
+
+.movie-intro-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.movie-intro-rating-content {
+    font-size: 20px;
+    font-weight: bold;
+    color: #98D4DC;
+    margin-right: 40px;
+}
+
+.fas.fa-star, .far.fa-star {
+    color: #98D4DC;
+}
+
+.movie-intro-desc {
+    width: 425px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.movie-intro-btn {
+    margin-top: 18px;
+}
+
+.movie-intro-btn-buy {
+    border-radius: 10px;
+    border: transparent;
+    background-color: #F5859D;
+    color: #49526D;
+    font-weight: bold;
+    margin: 0;
+    width: 120px;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.movie-intro-btn-more {
+    border-radius: 10px;
+    border: transparent;
+    background-color: #BABABA;
+    color: #49526D;
+    font-weight: bold;
+    margin: 0;
+    width: 120px;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+}

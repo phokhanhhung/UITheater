@@ -1,0 +1,12 @@
+.hot-movie {
+    height: 100%;
+    display: flex;
+}
+
+.hot-movie-num {
+    height: 125px;
+}
+
+.hot-movie-img {
+    height: 125px;
+}
