@@ -18,7 +18,34 @@
 }
 
 .hot-movies-bottom {
+    display: flex;
+    align-items: center;
+    margin: 0 -20px;
+    justify-content: space-between;
+}
+
+.hot-movies-bottom-movie {
     height: 125px;
+    width: 1300px;
     display: flex;
     justify-content: space-around;
+}
+
+.hot-movies-bottom-movie li:hover {
+    opacity: 70%;
+}
+
+.hot-movies-bottom-arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hot-movies-bottom-arrow-item {
+    color: #98D4DC;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hot-movies-bottom-arrow-item:hover {
+    color: #6f9ba0;
 }

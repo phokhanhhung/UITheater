@@ -26,35 +26,54 @@ function HotMovies() {
                     Phim hot tháng 10
                 </p>
             </div>
+
             <div className="hot-movies-bottom">
-                <HotMovie 
-                    src1={img1Num}
-                    src2={img1Img}
-                />
-                <HotMovie 
-                    src1={img2Num}
-                    src2={img2Img}
-                />
-                <HotMovie 
-                    src1={img3Num}
-                    src2={img3Img}
-                />
-                <HotMovie 
-                    src1={img4Num}
-                    src2={img4Img}
-                />
-                <HotMovie 
-                    src1={img5Num}
-                    src2={img5Img}
-                />
-                <HotMovie 
-                    src1={img6Num}
-                    src2={img6Img}
-                />
-                <HotMovie 
-                    src1={img7Num}
-                    src2={img7Img}
-                />
+                <i class="hot-movies-bottom-arrow-item fas fa-chevron-left"></i>
+                <ul className="hot-movies-bottom-movie">
+                    <li>
+                        <HotMovie 
+                            src1={img1Num}
+                            src2={img1Img}
+                        />
+                    </li>
+                    <li>
+                        <HotMovie 
+                            src1={img2Num}
+                            src2={img2Img}
+                        />
+                    </li>
+                    <li>
+                        <HotMovie 
+                            src1={img3Num}
+                            src2={img3Img}
+                        />
+                    </li>
+                    <li>
+                        <HotMovie 
+                            src1={img4Num}
+                            src2={img4Img}
+                        />
+                    </li>
+                    <li>
+                        <HotMovie 
+                            src1={img5Num}
+                            src2={img5Img}
+                        />
+                    </li>
+                    <li>
+                        <HotMovie 
+                            src1={img6Num}
+                            src2={img6Img}
+                        />
+                    </li>
+                    <li>
+                        <HotMovie 
+                            src1={img7Num}
+                            src2={img7Img}
+                        />
+                    </li>
+                </ul>
+                <i class="hot-movies-bottom-arrow-item fas fa-chevron-right"></i>
             </div>
         </div>
     )

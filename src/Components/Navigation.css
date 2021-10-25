@@ -39,6 +39,10 @@
     padding: 14px;
 }
 
+.nav-left-item:hover {
+    color: #F5859D;
+}
+
 .nav-right {
     width: 300px;
     display: flex;
@@ -53,6 +57,11 @@
     font-size: 20px;
 }
 
+.nav-right-search-icon:hover {
+    color: #F5859D;
+    cursor: pointer;
+}
+
 .nav-right-register {
     border-radius: 10px;
     border: transparent;
@@ -65,6 +74,11 @@
     height: 30px;
     cursor: pointer;
 }
+
+.nav-right-register:hover {
+    background-color: #7baab0;
+}
+
 .nav-right-login {
     border-radius: 10px;
     border: 1px solid #98D4DC;
@@ -76,5 +90,9 @@
     font-size: 14px;
     height: 32px;
     cursor: pointer;
+}
+
+.nav-right-login:hover {
+    background-color: #646464;
 }
 
