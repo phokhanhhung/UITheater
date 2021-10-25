@@ -7,8 +7,13 @@ function Navigation() {
     return (
         <div className="nav">
             <div className="nav-left">
-                <img className="nav-left-logo-img" src={logo} alt="logo" />
-                <i class="nav-left-logo-icon fas fa-home"></i>
+                <a href="/">
+                    <img className="nav-left-logo-img" src={logo} alt="logo" />
+                </a>
+                <a href="/">
+                    <i class="nav-left-logo-icon fas fa-home"></i>
+                </a>
+                
                 <ul className="nav-left-list">
                     <li>
                         <Link className="nav-left-item">PHIM</Link>

@@ -51,6 +51,10 @@
     margin-right: 35px;
 }
 
+.movie-intro-btn-buy:hover {
+    background-color: #b16173;
+}
+
 .movie-intro-btn-more {
     border-radius: 10px;
     border: transparent;
@@ -62,4 +66,8 @@
     font-size: 16px;
     height: 40px;
     cursor: pointer;
+}
+
+.movie-intro-btn-more:hover {
+    background-color: #7d7d7d;
 }
