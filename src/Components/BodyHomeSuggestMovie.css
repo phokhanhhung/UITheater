@@ -1,0 +1,13 @@
+.bodyHomeSuggestMovie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1px;
+}
+
+.bodyHomeSuggestMovie img{
+  object-fit: contain;
+  display: block;
+  outline: 7px solid rgba(255, 255, 255, 0.25);
+  outline-offset: -7px;
+}

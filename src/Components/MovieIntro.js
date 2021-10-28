@@ -8,11 +8,11 @@ function MovieIntro() {
             <img src={movieIntroImg} className="movieIntroImg" alt="movieIntroImg" />
             <div className="movie-intro-rating">
                 <p className="movie-intro-rating-content">TOP 1</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="far fa-star"></i>
             </div>
             <div className="movie-intro-desc">
                 Raya và Rồng Thần Cuối Cùng kể về một vương quốc huyền bí có tên là Kumandra – vùng đất mà loài rồng và con người sống hòa thuận với nhau. Nhưng rồi một thế lực đen tối bỗng đe dọa bình yên nơi đây, loài rồng buộc phải hi sinh để cứu lấy loài người...
