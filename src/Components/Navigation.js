@@ -14,21 +14,23 @@ function Navigation() {
                     <i class="nav-left-logo-icon fas fa-home"></i>
                 </a>
                 
+                <img className="nav-left-logo-img" src={logo} alt="logo" />
+                <i className="nav-left-logo-icon fas fa-home"></i>
                 <ul className="nav-left-list">
                     <li>
-                        <Link className="nav-left-item">PHIM</Link>
+                        <Link to="/" className="nav-left-item">PHIM</Link>
                     </li>
                     <li>
-                        <Link className="nav-left-item">LỊCH CHIẾU</Link>
+                        <Link to="/" className="nav-left-item">LỊCH CHIẾU</Link>
                     </li>
                     <li>
-                        <Link className="nav-left-item">RẠP & GIÁ VÉ</Link>
+                        <Link to="/" className="nav-left-item">RẠP & GIÁ VÉ</Link>
                     </li>
                     <li>
-                        <Link className="nav-left-item">TIN TỨC</Link>
+                        <Link to="/" className="nav-left-item">TIN TỨC</Link>
                     </li>
                     <li>
-                        <Link className="nav-left-item">LIÊN HỆ</Link>
+                        <Link to="/" className="nav-left-item">LIÊN HỆ</Link>
                     </li>
                 </ul>
             </div>
