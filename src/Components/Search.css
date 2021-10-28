@@ -1,0 +1,15 @@
+.search-input {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    height: 30px;
+    color: #98D4DC;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #98D4DC;
+}

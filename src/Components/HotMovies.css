@@ -44,6 +44,7 @@
     color: #98D4DC;
     font-size: 30px;
     cursor: pointer;
+    opacity: 25%;
 }
 
 .hot-movies-bottom-arrow-item:hover {

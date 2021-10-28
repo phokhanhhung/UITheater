@@ -10,8 +10,29 @@
 
 .app-wrap {
   height: 100%;
+  position: relative;
 }
 
 body {
   background-color: #1E1E2C;
+}
+
+.btn-gototop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  background-color: #FFB7CE;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.btn-gototop:hover {
+  background-color: #d89db0;
+}
+
+.btn-gototop-icon {
+  font-size: 20px;
 }
