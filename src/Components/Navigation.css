@@ -44,21 +44,66 @@
 }
 
 .nav-right {
-    width: 300px;
+    width: 500px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     margin-right: -16px;
     margin-left: 0;
 }
 
+@keyframes MoveLeft {
+    from {
+        left: 210px;
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.nav-right-search {
+    border-radius: 10px;
+    background-color: rgba(103, 163, 170, 0.5);
+    margin: 0;
+    width: 210px;
+    font-size: 14px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    padding-left: 15px;
+    position: relative;
+    animation: MoveLeft ease-in 1s;
+    justify-content: space-between;
+    padding-right: 8px;
+}
+
 .nav-right-search-icon {
-    color: #fff;
+    color: #98D4DC;
     font-size: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+    position: relative;
+    display: inline-block;
+    animation: MoveLeft ease-in 1s;
+}
+
+.nav-right-search-icon2 {
+    color: #98D4DC;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    display: inline-block;
+    animation: MoveLeft ease-in 1s;
 }
 
 .nav-right-search-icon:hover {
-    color: #F5859D;
+    color: #76a4ab;
     cursor: pointer;
 }
 
@@ -73,6 +118,7 @@
     font-size: 14px;
     height: 30px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .nav-right-register:hover {
@@ -89,6 +135,7 @@
     width: 92px;
     font-size: 14px;
     height: 32px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
