@@ -58,8 +58,6 @@ function Navigation() {
                     <i class="nav-left-logo-icon fas fa-home"></i>
                 </a>
                 
-                <img className="nav-left-logo-img" src={logo} alt="logo" />
-                <i className="nav-left-logo-icon fas fa-home"></i>
                 <ul className="nav-left-list">
                     <li>
                         <Link to="/" className="nav-left-item">PHIM</Link>
