@@ -19,9 +19,9 @@ function BodyHomeSuggestMovies() {
   }, [])
 
   useEffect(() =>{
-    // console.log(Math.floor(move.current.childNodes.length/6));
-    // console.log(movie);
-    // console.log(num, "effect");
+    console.log(Math.floor(move.current.childNodes.length/6));
+    console.log(movie);
+    console.log(num, "effect");
     setTrans(-(move.current.offsetWidth)*num);
 
   }, [num]);
@@ -45,7 +45,7 @@ function BodyHomeSuggestMovies() {
       <div className="bodyHomeSuggestMovies">
         <i className="fas fa-angle-left" onClick={handleLeftClick}></i>
           
-        <div className="bodyHomeSuggest_wrap">
+        <div className="bodyHomeSuggest_wrapper">
           <ul 
             ref={move}
             className="bodyHomeSuggest_list" 
