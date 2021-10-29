@@ -20,7 +20,7 @@
 .hot-movies-bottom {
     display: flex;
     align-items: center;
-    margin: 0 -20px;
+    margin: 0 -30px;
     justify-content: space-between;
 }
 
@@ -28,7 +28,7 @@
     height: 125px;
     width: 1300px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .hot-movies-bottom-movie li:hover {
