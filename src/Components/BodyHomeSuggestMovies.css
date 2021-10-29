@@ -29,3 +29,29 @@
 .bodyHomeSuggestMovies > i:hover {
   cursor: pointer;
 }
+
+/* --------------------------------- */
+
+.bodyHomeSuggestMovies_paging {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.bodyHomeSuggestMovies_paging > span {
+  background-color: #49526D;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 5px;
+  filter: blur(1.5px);
+}
+
+.bodyHomeSuggestMovies_paging > span.onPage{
+  background-color: #67A3AA;
+  border: 1px solid #000;
+}
+
+.bodyHomeSuggestMovies_paging > span:hover {
+  cursor: pointer;
+}

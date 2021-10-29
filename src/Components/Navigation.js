@@ -55,7 +55,7 @@ function Navigation() {
                     <img className="nav-left-logo-img" src={logo} alt="logo" />
                 </a>
                 <a href="/">
-                    <i class="nav-left-logo-icon fas fa-home"></i>
+                    <i className="nav-left-logo-icon fas fa-home"></i>
                 </a>
                 
                 <ul className="nav-left-list">

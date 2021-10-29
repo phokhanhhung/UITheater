@@ -1,7 +1,6 @@
 import React from 'react';
 import './BodyHomeMovies.css';
 import BodyHomeMovie from './BodyHomeMovie';
-import BodyHomePageNumber from './BodyHomePageNumber';
 
 function BodyHomeMovies() {
 
@@ -22,7 +21,17 @@ function BodyHomeMovies() {
           />
         ))}
         
-        <BodyHomePageNumber />
+        <div className="bodyHomePageNumber">        
+          <i className="fas fa-angle-left"></i>
+          <ul className="bodyHomePageNumber_list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li> 
+          </ul>       
+          <i className="fas fa-angle-right"></i>  
+        </div>
       </div>
     </div>
     
