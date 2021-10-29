@@ -3,6 +3,7 @@ import Header from './Components/Header.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BodyHome from './Components/BodyHome';
 import {useState, useEffect} from 'react'
+import Footer from './Components/Footer';
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false)
@@ -33,10 +34,11 @@ function App() {
           <Switch>
             <Route exact path="/"><BodyHome /></Route>
           </Switch>
+          <Footer />
           {
             showGoToTop && (
               <button className="btn-gototop" onClick={handleGoToTop}>
-                <i class="btn-gototop-icon fas fa-arrow-up"></i>
+                <i className="btn-gototop-icon fas fa-arrow-up"></i>
               </button>
             )
           }

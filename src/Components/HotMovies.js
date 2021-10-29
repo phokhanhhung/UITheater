@@ -28,7 +28,7 @@ function HotMovies() {
             </div>
 
             <div className="hot-movies-bottom">
-                <i class="hot-movies-bottom-arrow-item fas fa-chevron-left"></i>
+                <i className="hot-movies-bottom-arrow-item fas fa-chevron-left"></i>
                 <ul className="hot-movies-bottom-movie">
                     <li>
                         <HotMovie 
@@ -73,7 +73,7 @@ function HotMovies() {
                         />
                     </li>
                 </ul>
-                <i class="hot-movies-bottom-arrow-item fas fa-chevron-right"></i>
+                <i className="hot-movies-bottom-arrow-item fas fa-chevron-right"></i>
             </div>
         </div>
     )

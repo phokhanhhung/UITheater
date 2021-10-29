@@ -6,7 +6,7 @@
 
 .bodyHomeMovie {
   position: relative;
-  padding: 20px 20px;
+  padding: 15px 20px;
 }
 
 .bodyHomeMovie img{
@@ -18,7 +18,7 @@
 
 .bodyHomeMovie .bodyHomeMovie_infor {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
   display: none;
   flex-direction: column;

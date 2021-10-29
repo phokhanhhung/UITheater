@@ -6,17 +6,24 @@ import { useState } from 'react';
 function BodyHomeSuggestMovies() {
   const [trans, setTrans] = useState(0);
   const [num, setNum] = useState(0);
+  const [number, setNumber] = useState(0);
 
   // console.log(num, "outside");
 
   const move = useRef();
   const movie = useRef();
 
+
+  useEffect(() => {
+    setNumber(Math.ceil(move.current.childNodes.length/7));
+  }, [])
+
   useEffect(() =>{
     // console.log(Math.floor(move.current.childNodes.length/6));
     // console.log(movie);
     // console.log(num, "effect");
     setTrans(-(move.current.offsetWidth)*num);
+
   }, [num]);
 
   const handleRightClick = () => {
@@ -29,10 +36,15 @@ function BodyHomeSuggestMovies() {
     // console.log(num);
   }
 
+  const handlePaging = (index) => {
+    setNum(index);
+  }
 
   return (
-    <div className="bodyHomeSuggestMovies">
+    <div className="bodyHomeSuggestMovie_wrap">
+      <div className="bodyHomeSuggestMovies">
         <i className="fas fa-angle-left" onClick={handleLeftClick}></i>
+          
         <div className="bodyHomeSuggest_wrap">
           <ul 
             ref={move}
@@ -48,14 +60,22 @@ function BodyHomeSuggestMovies() {
                   wrapWidth={1300/7}
                 />
               </li>
-            ))}
-            
+            ))}  
           </ul> 
         </div>
-        
-            
+              
         <i className="fas fa-angle-right" onClick={handleRightClick}></i> 
       </div>
+
+      <div className="bodyHomeSuggestMovies_paging">
+        {Array(number)
+          .fill()
+          .map((_, index) => (
+            <span key={index} className={num===index ? "onPage" : ""} onClick={() => handlePaging(index)}></span>
+        ))}
+      </div>
+    </div>
+    
   )
 }
 
