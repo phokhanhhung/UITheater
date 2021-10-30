@@ -19,9 +19,9 @@ function BodyHomeSuggestMovies() {
   }, [])
 
   useEffect(() =>{
-    console.log(Math.floor(move.current.childNodes.length/6));
-    console.log(movie);
-    console.log(num, "effect");
+    // console.log(Math.floor(move.current.childNodes.length/6));
+    // console.log(movie);
+    // console.log(num, "effect");
     setTrans(-(move.current.offsetWidth)*num);
 
   }, [num]);
@@ -55,9 +55,6 @@ function BodyHomeSuggestMovies() {
               <li key={index}>
                 <BodyHomeSuggestMovie
                   ref={movie}
-                  height={250}  
-                  width={173.1} 
-                  wrapWidth={1300/7}
                 />
               </li>
             ))}  
