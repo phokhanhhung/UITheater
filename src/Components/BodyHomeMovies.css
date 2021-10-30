@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-.bodyHomePageNumber_list li:nth-child(2) {
+.bodyHomePageNumber_list li.onPage {
   border-radius: 15px;
   background-color: #98D4DC;
   color: #000;
