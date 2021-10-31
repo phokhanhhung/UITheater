@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { useState } from 'react/cjs/react.development';
+import React, { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './BodyHomeNav.css';
 
 function BodyHomeNav() {
@@ -47,10 +47,11 @@ function BodyHomeNav() {
   return (
     <div className="bodyHomeNav">
       <ul className="bodyHomeNav_item">
-        <li onClick={handleClick1} ref={item1}>PHIM ĐANG CHIẾU</li>
-        <li onClick={handleClick2} ref={item2}>PHIM SẮP CHIẾU</li>
-        <li onClick={handleClick3} ref={item3}>SUẤT CHIẾU ĐẶC BIỆT</li>
+        <li onClick={handleClick1} ref={item1}><Link to="/home/dangchieu">PHIM ĐANG CHIẾU</Link></li>
+        <li onClick={handleClick2} ref={item2}><Link to="/home/sapchieu">PHIM SẮP CHIẾU</Link></li>
+        <li onClick={handleClick3} ref={item3}><Link to="/home/dacbiet">SUẤT CHIẾU ĐẶC BIỆT</Link></li>
       </ul>
+
       <div className="bodyHomeNav_pos" style={{left: move+"px"}}></div>
     </div>
   )

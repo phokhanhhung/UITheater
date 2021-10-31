@@ -33,6 +33,7 @@ function App() {
           <Header />
           <Switch>
             <Route exact path="/"><BodyHome /></Route>
+            <Route path="/home"><BodyHome /></Route>
           </Switch>
           <Footer />
           {
