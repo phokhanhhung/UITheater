@@ -24,40 +24,45 @@ function BodyHomeSuggest() {
 
   return (
     <div className="bodyHomeSuggest">
-      <div className="bodyHomeSuggest_block">
-        <h2 className="bodyHomeSuggest_title">Phim hay đề xuất</h2>
-        <div className="bodyHomeSuggest_type">
-          <div className="bodyHomeSuggest_choice">
-            <span>{type}</span>
-            <i className="fas fa-sort-down"></i>
-          </div>
-          <div className="bodyHomeSuggest_space"></div>
-          <div className="bodyHomeSuggest_allType">
-            <div className="bodyHomeSuggest_col">
-              {col1.map((item, index) => (
-                <p 
-                  key={index} 
-                  onClick={() => handleClick1(index)}
-                  style={{fontWeight: index===bold1 ? "bold" : ""}}
-                >
-                  {item}
-                </p>
-              ))}
+      <div className="bodyHomeSuggest_wrap">
+        <div className="bodyHomeSuggest_block">
+          <h2 className="bodyHomeSuggest_title">Phim hay đề xuất</h2>
+          <div className="bodyHomeSuggest_type">
+            <div className="bodyHomeSuggest_choice">
+              <span>{type}</span>
+              <i className="fas fa-sort-down"></i>
             </div>
-            <div className="bodyHomeSuggest_col">
-              {col2.map((item, index) => (
-                <p 
-                  key={index} 
-                  onClick={() => handleClick2(index)}
-                  style={{fontWeight: index===bold2 ? "bold" : ""}}
-                >
-                  {item}
-                </p>
-              ))}
+            <div className="bodyHomeSuggest_space"></div>
+            <div className="bodyHomeSuggest_allType">
+              <div className="bodyHomeSuggest_col">
+                {col1.map((item, index) => (
+                  <p 
+                    key={index} 
+                    onClick={() => handleClick1(index)}
+                    style={{fontWeight: index===bold1 ? "bold" : ""}}
+                  >
+                    {item}
+                  </p>
+                ))}
+              </div>
+              <div className="bodyHomeSuggest_col">
+                {col2.map((item, index) => (
+                  <p 
+                    key={index} 
+                    onClick={() => handleClick2(index)}
+                    style={{fontWeight: index===bold2 ? "bold" : ""}}
+                  >
+                    {item}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
+
+        <a className="watchFull" href="#">Xem tất cả</a>
       </div>
+      
       
       <BodyHomeSuggestMovies />
     </div>

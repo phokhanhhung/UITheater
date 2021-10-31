@@ -1,3 +1,9 @@
+.bodyHomeSuggest_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .bodyHomeSuggest_block {
   display: flex;
   justify-content: space-between;
@@ -58,6 +64,12 @@
 
 .bodyHomeSuggest_col {
   width: 35%;
+}
+
+.bodyHomeSuggest_wrap .watchFull {
+  color: #67A3AA;
+  font-size: 14px;
+  font-style: italic;
 }
 
 /*------------------------------*/

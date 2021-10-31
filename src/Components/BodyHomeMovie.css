@@ -1,8 +1,17 @@
+.bodyHomeMovie_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
 .bodyHomeMovie {
   position: relative;
+  padding: 15px 20px;
 }
 
 .bodyHomeMovie img{
+  height: 300px;
   object-fit: contain;
   display: block;
   outline: 7px solid rgba(255, 255, 255, 0.25);
@@ -11,13 +20,16 @@
 
 .bodyHomeMovie .bodyHomeMovie_infor {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15px;
+  left: 20px;
   display: none;
+  width: 207.7px;
+  height: 300px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
+  padding: 10px;
 }
 
 /* .bodyHomeMovie:hover {
@@ -64,10 +76,14 @@
 .bodyHomeMovie_infor button {
   width: 120px;
   height: 30px;
-  color: #49526D;
   font-size: 14px;
+  font-weight: bold;
   border-radius: 10px;
   border: none;
+}
+
+.bodyHomeMovie_infor button i {
+  margin-right: 8px;
 }
 
 .bodyHomeMovie_infor button:hover{
@@ -76,9 +92,11 @@
 
 .bodyHomeMovie_infor .bodyHomeMovie_buy {
   background-color: #F5859D;
+  color: #000;
 }
 
 .bodyHomeMovie_infor .bodyHomeMovie_more {
   background-color: #ECDEE3;
+  color: #49526D;
 }
 

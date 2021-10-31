@@ -17,7 +17,7 @@
   width: 50px;
   font-size: 25px;
   text-align: center;
-  color: #f5859d;
+  color: #98D4DC;
   cursor: pointer;
 }
 
@@ -32,7 +32,7 @@
 
 .bodyHomePageNumber_list li:nth-child(2) {
   border-radius: 15px;
-  background-color: #f5859d;
+  background-color: #98D4DC;
   color: #000;
 }
 

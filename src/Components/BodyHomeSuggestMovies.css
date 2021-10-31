@@ -5,14 +5,13 @@
   margin: 0 -60px;
 }
 
-.bodyHomeSuggest_wrap {
+.bodyHomeSuggest_wrapper {
   overflow-x: hidden;
 }
 
 .bodyHomeSuggest_list {
   position: relative;
-  top: 0;
-  left: 0;
+  margin: 0 -7px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -24,9 +23,35 @@
   font-size: 60px;
   color: #98D4DC;
   opacity: 0.25;
-  margin: 0 15px
+  margin: 0 15px;
 }
 
 .bodyHomeSuggestMovies > i:hover {
+  cursor: pointer;
+}
+
+/* --------------------------------- */
+
+.bodyHomeSuggestMovies_paging {
+  text-align: center;
+  margin: 15px 0 60px;
+}
+
+.bodyHomeSuggestMovies_paging > span {
+  background-color: #49526D;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 5px;
+  filter: blur(1.5px);
+}
+
+.bodyHomeSuggestMovies_paging > span.onPage{
+  background-color: #67A3AA;
+  border: 1px solid #000;
+}
+
+.bodyHomeSuggestMovies_paging > span:hover {
   cursor: pointer;
 }
