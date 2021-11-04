@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BodyHome from './Components/BodyHome';
 import {useState, useEffect} from 'react'
 import Footer from './Components/Footer';
+import BodyHomeMore from './Components/BodyHomeMore';
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false)
@@ -42,6 +43,7 @@ function App() {
               </button>
             )
           }
+          <BodyHomeMore />
         </div>
       </div>
     </Router>

@@ -1,0 +1,50 @@
+.bodyHomeMovie-more-bottom-more-list-wrapper {
+    width: 1078px;
+    overflow-x: hidden;
+}
+
+.bodyHomeMovie-more-bottom-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1124px;
+    height: 235px;
+}
+
+.bodyHomeMovie-more-bottom-more-item {
+    color: #98D4DC;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 50%;
+}   
+
+.bodyHomeMovie-more-bottom-more-list {
+    width: 1078px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    transition: all ease 2s;
+    list-style: none;
+}
+
+.bodyHomeMovie-more-bottom-paging {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bodyHomeMovie-more-bottom-paging > span {
+    background-color: #49526D;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 5px;
+    filter: blur(1.5px);
+}
+
+.bodyHomeMovie-more-bottom-paging > span.onPage {
+    background-color: #67A3AA;
+    border: 1px solid #000;
+}

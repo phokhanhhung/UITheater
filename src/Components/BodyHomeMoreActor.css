@@ -1,0 +1,15 @@
+.bodyHomeMovie-more-right-actor-body-item {
+    padding-right: 54px;
+    /* position: absolute; */
+}
+
+.bodyHomeMovie-more-right-actor-body-item-img {
+    height: 140px;
+    width: 112px;
+}
+
+.bodyHomeMovie-more-right-actor-body-item-name {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}

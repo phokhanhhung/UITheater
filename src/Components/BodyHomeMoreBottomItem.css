@@ -1,0 +1,15 @@
+.bodyHomeMovie-more-bottom-more-list-item-wrapper {
+    
+}
+
+.bodyHomeMovie-more-bottom-more-list-item {
+    width: calc(1078px/6);
+    height: 234px;
+}
+
+.bodyHomeMovie-more-bottom-more-list-item-img {
+    margin-left: calc(1078px/6)/2;
+    width: 162px;
+    height: 234px;
+    border: 5px solid rgba(255, 255, 255, 0.25);
+}

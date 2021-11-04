@@ -1,0 +1,63 @@
+.bodyHomeMovie-more-right-cmt-item {
+    background-color: rgba(70, 62, 106, 0.5);
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}   
+
+.bodyHomeMovie-more-right-cmt-item-avatar {
+    font-size: 35px;
+    margin-right: 8px;
+}   
+
+.bodyHomeMovie-more-right-cmt-item-content {
+
+}
+
+.bodyHomeMovie-more-right-cmt-item-content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bodyHomeMovie-more-right-cmt-item-content-top-intro {
+    display: flex;
+    align-items: center;
+
+}
+
+.bodyHomeMovie-more-right-cmt-item-content-top-intro-name {
+    color: #C0556F;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.bodyHomeMovie-more-right-cmt-item-content-top-intro-status {
+    color: #67A3AA;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.bodyHomeMovie-more-right-cmt-item-content-top-star-icon {
+    color: #67A3AA;
+}   
+
+.bodyHomeMovie-more-right-cmt-item-content-line {
+    border: 0.5px solid #463E6A;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}   
+
+.bodyHomeMovie-more-right-cmt-item-content-desc {
+    text-align: justify;
+    font-size: 14px;
+    color: #fff;
+}
+
+.bodyHomeMovie-more-right-cmt-item-content-time {
+    color: #49526D;
+    font-size: 12px;
+    padding-top: 5px;
+}
