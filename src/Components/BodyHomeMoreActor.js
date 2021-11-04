@@ -2,8 +2,7 @@ import React from 'react'
 import ActorImg from '../Assets/Images/actor.png'
 import './BodyHomeMoreActor.css'
 
-function BodyHomeMoreActor({name}, ref) {
-
+function BodyHomeMoreActor({name}) {
     return (
         <li className="bodyHomeMovie-more-right-actor-body-item">
             <img className="bodyHomeMovie-more-right-actor-body-item-img" src={ActorImg}/>
