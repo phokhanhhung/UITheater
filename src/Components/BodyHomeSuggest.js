@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './BodyHomeSuggest.css';
 import BodyHomeSuggestMovies from './BodyHomeSuggestMovies';
 
@@ -60,7 +61,7 @@ function BodyHomeSuggest() {
           </div>
         </div>
 
-        <a className="watchFull" href="#">Xem tất cả</a>
+        <Link to="/categories" className="watchFull">Xem tất cả</Link>
       </div>
       
       

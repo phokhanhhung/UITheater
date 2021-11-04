@@ -47,16 +47,22 @@
 
 .bodyHomeMovie-more-left-img {
     width: 270px;
-    border: 10px solid rgba(255, 255, 255, 0.25);
+    outline: 7px solid rgba(255, 255, 255, 0.25);
+    outline-offset: -7px;
+    border-radius: 10px;
 }
 
 .bodyHomeMovie-more-left-btn1 {
     width: 270px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #C0556F;
-    border: 5px solid #DCA0AE;
+    border: none;
+    outline: 7px solid rgba(255, 255, 255, 0.25);
+    outline-offset: -7px;
+    border-radius: 10px;
     margin-top: 15px;
 }
 
@@ -72,11 +78,15 @@
 
 .bodyHomeMovie-more-left-btn2 {
     width: 270px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #67A3AA;
-    border: 5px solid #A9CBCF;
+    border: none;
+    outline: 7px solid rgba(255, 255, 255, 0.25);
+    outline-offset: -7px;
+    border-radius: 10px;
     margin-top: 15px;
 }
 

@@ -1,12 +1,11 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Navigation.css'
 import logo from '../Assets/Images/logo.png'
 import { Link } from 'react-router-dom'
 import Search  from './Search'
-import {useState, useEffect} from 'react'
 
-function Navigation() {
 
+function Navigation({handleShowSignIn1, handleShowSignUp1}) {
     const [search, setSearch] = useState(false)
 
     useEffect(() => {
@@ -48,6 +47,14 @@ function Navigation() {
         }
     }
 
+    const handleSignIn = () => {
+        handleShowSignIn1(true);
+    }
+
+    const handleSignUp = () => {
+        handleShowSignUp1(true);
+    }
+
     return (
         <div className="nav" onClick={handleClickNav}>
             <div className="nav-left">
@@ -83,9 +90,10 @@ function Navigation() {
                     <Search />
                     <i className="nav-right-search-icon2 fas fa-search"></i>
                 </div>
-                <button className="nav-right-register">Đăng ký</button>
-                <button className="nav-right-login">Đăng nhập</button>
+                <button className="nav-right-register" onClick={handleSignUp}>Đăng ký</button>
+                <button className="nav-right-login" onClick={handleSignIn}>Đăng nhập</button>
             </div>
+
         </div>
     )
 }

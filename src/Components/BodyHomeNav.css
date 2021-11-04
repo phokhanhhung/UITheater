@@ -17,7 +17,6 @@
   align-items: center;
   font-size: 18px;
   font-weight: 700;
-  color: #4c3f76;
   z-index: 99;
 }
 
@@ -25,6 +24,15 @@
   width: 33.33333%;
   text-align: center;
   line-height: 40px;
+
+}
+
+.bodyHomeNav_item li a {
+  line-height: 40px;
+  width: 100%;
+  color: #49526D;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .bodyHomeNav_item li:hover {
