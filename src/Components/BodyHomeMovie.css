@@ -88,6 +88,7 @@
 
 .bodyHomeMovie_infor button:hover{
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .bodyHomeMovie_infor .bodyHomeMovie_buy {

@@ -2,13 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import './BodyHomeMovies.css';
 import BodyHomeMovie from './BodyHomeMovie';
 
-function BodyHomeMovies() {
+function BodyHomeMovies({name}) {
   const [posters, setPosters] = useState([]);
   const [arr, setArr] = useState([]);
   const [page, setPage] = useState(0);
 
   useEffect(() => {
-    // await axios.get('')
+    // await axios.get(`/{name}`)
     // .then((data) => setPosters(data.recordset));
     setPosters([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]);
   },[]);
@@ -27,7 +27,7 @@ function BodyHomeMovies() {
   }
 
   const handlePrevious = () => {
-    if(page > 0) handlePaging(page);
+    if(page > 0) handlePaging(page - 1);
   }
 
   const handleNext = () => {

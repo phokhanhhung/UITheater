@@ -12,19 +12,19 @@ function BodyHome() {
 
 
       <Route exact path="/">
-        <BodyHomeMovies />
+        <BodyHomeMovies name="dangchieu"/>
       </Route>
 
       <Route exact path="/home/dangchieu">
-        <BodyHomeMovies />
+        <BodyHomeMovies name="dangchieu" />
       </Route>
 
       <Route exact path="/home/sapchieu">
-        <div>Sắp chiếu</div>
+        <BodyHomeMovies name="sapchieu" />
       </Route>
 
       <Route exact path="/home/dacbiet">
-        <div>Đặc biệt</div>
+        <BodyHomeMovies name="dacbiet" />
       </Route>
 
       
