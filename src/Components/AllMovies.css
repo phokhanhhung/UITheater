@@ -1,0 +1,80 @@
+.allMovies {
+  width: 1300px;
+  margin: 40px auto 60px;
+}
+
+.allMovies_block {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  color: #F5859D;
+  margin: 20px 0;
+}
+
+.allMovies_block .allMovies_title {
+  font-size: 20px; 
+}
+
+.allMovies_type {
+  position: relative;
+  z-index: 99;
+}
+
+.allMovies_type:hover .allMovies_allType{
+  display: flex;
+}
+
+.allMovies_type .allMovies_choice {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px #F5859D solid;
+}
+
+.allMovies_type .allMovies_space {
+  width: 120px;
+  height: 4px;
+}
+
+.allMovies_type .allMovies_allType {
+  display: none;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 259px;
+  position: absolute;
+  background-color: #F5859D;
+  border-radius: 10px;
+  color: #000;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.allMovies_allType p {
+  margin: 6px 0;
+}
+
+.allMovies_allType p:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.allMovies_col {
+  width: 35%;
+}
+
+/* ----------------------------- */
+
+.allMovies_wrap {
+  margin: 0 -32px;
+}
+
+.allMovies_movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: unset;
+  align-items: center;
+  width: 100%;
+}
