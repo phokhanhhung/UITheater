@@ -1,0 +1,454 @@
+/* bodyHomeMovie-more */
+.bodyHomeMovie-more {
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.bodyHomeMovie-more-wrap {
+    z-index: 9999;
+    background-color: #1C1E27;
+    width: 1200px;
+    height: 2034px;
+    margin-top: 150px;
+    margin: 150px auto;
+    border-radius: 20px;
+    background-image: url(../Assets/Images/lalaland-poster.png);
+    background-repeat: no-repeat;
+}
+  
+.bodyHomeMovie-more-exit {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.bodyHomeMovie-more-exit-icon {
+    font-size: 40px;
+    color: #463E6A;
+}
+  
+.bodyHomeMovie-more-body {
+    margin: 0 50px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyHomeMovie-more-left {
+    width: 180px;
+}
+
+.bodyHomeMovie-more-left-img {
+    width: 270px;
+    border: 10px solid rgba(255, 255, 255, 0.25);
+}
+
+.bodyHomeMovie-more-left-btn1 {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #C0556F;
+    border: 5px solid #DCA0AE;
+    margin-top: 15px;
+}
+
+.bodyHomeMovie-more-left-btn1-img {
+    font-size: 50px;
+}
+
+.bodyHomeMovie-more-left-btn1-content {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.bodyHomeMovie-more-left-btn2 {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #67A3AA;
+    border: 5px solid #A9CBCF;
+    margin-top: 15px;
+}
+
+.bodyHomeMovie-more-left-btn2-img {
+    font-size: 40px;
+}
+
+.bodyHomeMovie-more-left-btn2-content {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.bodyHomeMovie-more-left-rating {
+    margin-top: 147px;
+    width: 270px;
+}
+
+.bodyHomeMovie-more-left-rating-top {
+    display: flex;
+    align-items: center;
+}
+
+.bodyHomeMovie-more-left-rating-top-num {
+    font-size: 50px;
+    font-weight: bold;
+    color: #C0556F;
+}
+
+.bodyHomeMovie-more-left-rating-top-right {
+    margin-left: 20px;
+}
+
+.bodyHomeMovie-more-left-rating-top-right-star {
+}
+
+.bodyHomeMovie-more-left-rating-top-right-star-icon {
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.bodyHomeMovie-more-left-rating-top-right-cmt {
+    color: white;
+    font-size: 14px;
+}
+
+.bodyHomeMovie-more-left-rating-bottom {
+
+}
+
+.bodyHomeMovie-more-left-rating-bottom-item {
+    display: flex;
+    align-items: center;
+}
+
+.bodyHomeMovie-more-left-rating-bottom-item-star {
+
+}
+
+.bodyHomeMovie-more-left-rating-bottom-item-star-icon {
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.bodyHomeMovie-more-left-rating-top-right-star-progress {
+    font-size: 12px;
+    margin-left: 16px;
+}
+
+.bodyHomeMovie-more-left-rating-top-right-star-progress-bar {
+    font-size: 12px;
+    color: #726A95;
+}
+
+progress {
+    -webkit-appearance: none;
+}
+  
+::-webkit-progress-bar {
+    background-color: #463E6A;
+}
+
+.bodyHomeMovie-more-left-rating-top-right-star-progress-label {
+    color: #726A95;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+.bodyHomeMovie-more-left-filter {
+    margin-top: 20px;
+}
+
+.bodyHomeMovie-more-left-filter-content {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.bodyHomeMovie-more-left-filter-star {
+
+}
+
+.bodyHomeMovie-more-left-filter-star-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyHomeMovie-more-left-filter-star-bottom {
+    margin-top: 10px;
+}
+
+
+.bodyHomeMovie-more-left-filter-star-item {
+    background-color: #49526D;
+    color: #67A3AA;
+    height: 30px;
+    width: 45px;
+    border-radius: 10px;
+    border: none;
+}
+
+.bodyHomeMovie-more-left-filter-star-item1 {
+    background-color: #49526D;
+    color: #67A3AA;
+    height: 30px;
+    width: 67px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.bodyHomeMovie-more-left-filter-star-item2 {
+    background-color: #49526D;
+    color: #67A3AA;
+    height: 30px;
+    width: 98px;
+    border-radius: 10px;
+    border: none;
+}
+
+.bodyHomeMovie-more-left-filter-star-item-icon {
+
+}
+
+  
+.bodyHomeMovie-more-right {
+    margin-left: 50px;
+    width: 780px;
+    margin-top: 50px;
+}
+
+.bodyHomeMovie-more-right-movie {
+
+}
+
+.bodyHomeMovie-more-right-movie-star {
+
+}
+
+.bodyHomeMovie-more-right-movie-star-icon {
+    font-size: 20px;
+}
+
+.bodyHomeMovie-more-right-movie-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bodyHomeMovie-more-right-movie-body-left {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bodyHomeMovie-more-right-movie-body-left-title {
+    font-size: 64px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bodyHomeMovie-more-right-movie-body-left-age {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    color: #49526D;
+    background-color: #98D4DC;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.bodyHomeMovie-more-right-movie-body-right {
+    display: flex;
+
+}
+
+.bodyHomeMovie-more-right-movie-body-right-buy {
+    width: 120px;
+    height: 40px;
+    background-color: #F5859D;
+    border: none;
+    border-radius: 12px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.bodyHomeMovie-more-right-movie-body-right-buy-cart {
+    color: #000;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.bodyHomeMovie-more-right-movie-body-right-buy-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bodyHomeMovie-more-right-movie-body-right-trailer {
+    width: 120px;
+    height: 40px;
+    background-color: #ECDEE3;
+    border: none;
+    border-radius: 12px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyHomeMovie-more-right-movie-body-right-trailer-play {
+    color: #49526D;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.bodyHomeMovie-more-right-movie-body-right-trailer-title {
+    color: #49526D;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bodyHomeMovie-more-right-movie-desc {
+    margin-top: 15px;
+}
+
+.bodyHomeMovie-more-right-movie-desc-title {
+    color: #C0556F;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bodyHomeMovie-more-right-movie-desc-content {
+    color: white;
+    font-size: 14px;
+}
+
+.bodyHomeMovie-more-right-movie-desc-bottom {
+    display: flex;
+    margin-top: 15px;
+}
+
+.bodyHomeMovie-more-right-movie-desc-left {
+
+}
+
+.bodyHomeMovie-more-right-movie-desc-left-item {
+    color: #C0556F;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.bodyHomeMovie-more-right-movie-desc-right {
+    margin-left: 50px;
+}   
+
+.bodyHomeMovie-more-right-movie-desc-right-item {
+    color: #fff;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.bodyHomeMovie-more-right-actor {
+    height: 200px;
+    margin-top: 12px;
+}
+
+.bodyHomeMovie-more-right-actor-title {
+    color: #C0556F;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bodyHomeMovie-more-right-actor-body {
+    height: 200px;
+    display: flex;
+    width: 832px;
+    justify-content: space-between;
+    margin-left: -24px;
+    position: relative;
+    align-items: center;
+}
+
+.bodyHomeMovie-more-right-actor-body-list {
+    display: flex;
+    justify-content: flex-start;
+    width: 780px;
+    flex-wrap: no-wrap;
+    overflow-x: hidden;
+    position: absolute;
+    transition: all ease 1s;
+}
+
+.bodyHomeMovie-more-right-cmt {
+    margin-top: 40px;
+}
+
+.bodyHomeMovie-more-right-cmt-evaluate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.bodyHomeMovie-more-right-cmt-evaluate-title {
+    color: #C0556F;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bodyHomeMovie-more-right-cmt-evaluate-content {
+    font-style: italic;
+    font-size: 14px;
+    color: #67A3AA;
+    margin-left: 14px;
+}
+
+.bodyHomeMovie-more-right-cmt-list {
+    margin-top: 10px;
+}
+
+.bodyHomeMovie-more-right-cmt-more {
+    background-color: rgba(70, 62, 106, 0.5);
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.bodyHomeMovie-more-right-cmt-more-content {
+    text-align: center;
+    width: 100%;
+    color: #67A3AA;
+    font-size: 14px;
+    text-decoration: underline;
+}
+  
+.bodyHomeMovie-more-bottom {
+    width: 1124px;
+    margin: 40px auto;
+}
+
+.bodyHomeMovie-more-bottom-title {
+    color: #C0556F;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
