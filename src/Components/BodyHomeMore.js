@@ -43,7 +43,7 @@ function BodyHomeMore() {
         <div className="bodyHomeMovie-more" onClick={handleClickExit}>
                 <div className="bodyHomeMovie-more-wrap" onClick={e => e.stopPropagation()}>
                     <div className="bodyHomeMovie-more-exit" onClick={handleClickExit}>
-                        <i class="bodyHomeMovie-more-exit-icon fas fa-times-circle" />
+                        <i className="bodyHomeMovie-more-exit-icon fas fa-times-circle" />
                     </div>
 
                     <div className="bodyHomeMovie-more-body">
@@ -62,11 +62,11 @@ function BodyHomeMore() {
                                     <p className="bodyHomeMovie-more-left-rating-top-num">4.2</p>
                                     <div className="bodyHomeMovie-more-left-rating-top-right">
                                         <div className="bodyHomeMovie-more-left-rating-top-right-star">
-                                            <i class="bodyHomeMovie-more-left-rating-top-right-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-top-right-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-top-right-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-top-right-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-top-right-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-top-right-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-top-right-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-top-right-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-top-right-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-top-right-star-icon far fa-star"></i>
                                         </div>
                                         <div className="bodyHomeMovie-more-left-rating-top-right-cmt">
                                             (25 nhận xét)
@@ -77,11 +77,11 @@ function BodyHomeMore() {
                                 <div className="bodyHomeMovie-more-left-rating-bottom">
                                     <div className="bodyHomeMovie-more-left-rating-bottom-item">
                                         <div className="bodyHomeMovie-more-left-rating-bottom-item-star">
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
                                         </div>
                                         <div className="bodyHomeMovie-more-left-rating-top-right-star-progress">
                                             <progress className="bodyHomeMovie-more-left-rating-top-right-star-progress-bar" value="15" max="25"></progress>
@@ -90,11 +90,11 @@ function BodyHomeMore() {
                                     </div>
                                     <div className="bodyHomeMovie-more-left-rating-bottom-item">
                                         <div className="bodyHomeMovie-more-left-rating-bottom-item-star">
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
                                         </div>
                                         <div className="bodyHomeMovie-more-left-rating-top-right-star-progress">
                                             <progress className="bodyHomeMovie-more-left-rating-top-right-star-progress-bar" value="5" max="25"></progress>
@@ -103,11 +103,11 @@ function BodyHomeMore() {
                                     </div>
                                     <div className="bodyHomeMovie-more-left-rating-bottom-item">
                                         <div className="bodyHomeMovie-more-left-rating-bottom-item-star">
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
                                         </div>
                                         <div className="bodyHomeMovie-more-left-rating-top-right-star-progress">
                                             <progress className="bodyHomeMovie-more-left-rating-top-right-star-progress-bar" value="3" max="25"></progress>
@@ -116,11 +116,11 @@ function BodyHomeMore() {
                                     </div>
                                     <div className="bodyHomeMovie-more-left-rating-bottom-item">
                                         <div className="bodyHomeMovie-more-left-rating-bottom-item-star">
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
                                         </div>
                                         <div className="bodyHomeMovie-more-left-rating-top-right-star-progress">
                                             <progress className="bodyHomeMovie-more-left-rating-top-right-star-progress-bar" value="2" max="25"></progress>
@@ -129,11 +129,11 @@ function BodyHomeMore() {
                                     </div>
                                     <div className="bodyHomeMovie-more-left-rating-bottom-item">
                                         <div className="bodyHomeMovie-more-left-rating-bottom-item-star">
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
-                                            <i class="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon fas fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
+                                            <i className="bodyHomeMovie-more-left-rating-bottom-item-star-icon far fa-star"></i>
                                         </div>
                                         <div className="bodyHomeMovie-more-left-rating-top-right-star-progress">
                                             <progress className="bodyHomeMovie-more-left-rating-top-right-star-progress-bar" value="1" max="25"></progress>
@@ -148,23 +148,23 @@ function BodyHomeMore() {
                                         <div className="bodyHomeMovie-more-left-filter-star-top">
                                             <button className="bodyHomeMovie-more-left-filter-star-item">
                                                 1
-                                                <i class="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
+                                                <i className="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
                                             </button>
                                             <button className="bodyHomeMovie-more-left-filter-star-item">
                                                 2
-                                                <i class="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
+                                                <i className="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
                                             </button>
                                             <button className="bodyHomeMovie-more-left-filter-star-item">
                                                 3
-                                                <i class="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
+                                                <i className="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
                                             </button>
                                             <button className="bodyHomeMovie-more-left-filter-star-item">
                                                 4
-                                                <i class="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
+                                                <i className="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
                                             </button>
                                             <button className="bodyHomeMovie-more-left-filter-star-item">
                                                 5
-                                                <i class="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
+                                                <i className="bodyHomeMovie-more-left-filter-star-item-icon far fa-star"></i>
                                             </button>
                                         </div>
                                         <div className="bodyHomeMovie-more-left-filter-star-bottom">
@@ -179,11 +179,11 @@ function BodyHomeMore() {
                         <div className="bodyHomeMovie-more-right">
                             <div className="bodyHomeMovie-more-right-movie">
                                 <div className="bodyHomeMovie-more-right-movie-star">
-                                    <i class="bodyHomeMovie-more-right-movie-star-icon fas fa-star"></i>
-                                    <i class="bodyHomeMovie-more-right-movie-star-icon fas fa-star"></i>
-                                    <i class="bodyHomeMovie-more-right-movie-star-icon fas fa-star"></i>
-                                    <i class="bodyHomeMovie-more-right-movie-star-icon fas fa-star"></i>
-                                    <i class="bodyHomeMovie-more-right-movie-star-icon far fa-star"></i>
+                                    <i className="bodyHomeMovie-more-right-movie-star-icon fas fa-star"></i>
+                                    <i className="bodyHomeMovie-more-right-movie-star-icon fas fa-star"></i>
+                                    <i className="bodyHomeMovie-more-right-movie-star-icon fas fa-star"></i>
+                                    <i className="bodyHomeMovie-more-right-movie-star-icon fas fa-star"></i>
+                                    <i className="bodyHomeMovie-more-right-movie-star-icon far fa-star"></i>
                                 </div>
 
                                 <div className="bodyHomeMovie-more-right-movie-body">
@@ -195,11 +195,11 @@ function BodyHomeMore() {
 
                                     <div className="bodyHomeMovie-more-right-movie-body-right">
                                         <button className="bodyHomeMovie-more-right-movie-body-right-buy">
-                                            <i class="bodyHomeMovie-more-right-movie-body-right-buy-cart fas fa-cart-arrow-down"></i>
+                                            <i className="bodyHomeMovie-more-right-movie-body-right-buy-cart fas fa-cart-arrow-down"></i>
                                             <p className="bodyHomeMovie-more-right-movie-body-right-buy-title">Mua vé</p>
                                         </button>
                                         <button className="bodyHomeMovie-more-right-movie-body-right-trailer">
-                                            <i class="bodyHomeMovie-more-right-movie-body-right-trailer-play fas fa-play"></i>
+                                            <i className="bodyHomeMovie-more-right-movie-body-right-trailer-play fas fa-play"></i>
                                             <p className="bodyHomeMovie-more-right-movie-body-right-trailer-title">Trailer</p>
                                         </button>
                                     </div>

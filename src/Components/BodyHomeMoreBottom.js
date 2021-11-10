@@ -24,7 +24,7 @@ function BodyHomeMoreBottom() {
     }, [num])
     useEffect(() => {
         setNumber(Math.ceil(move.current.childNodes.length/6));
-    }, [])    
+    })    
 
     const handleClick3 = () => {
         setNum(num > 0 ? num - 1 : num )

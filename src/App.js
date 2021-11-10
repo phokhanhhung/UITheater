@@ -5,11 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BodyHome from './Components/BodyHome';
 
 import Footer from './Components/Footer';
-<<<<<<< HEAD
 import AllMovies from './Components/AllMovies';
-=======
 import BodyHomeMore from './Components/BodyHomeMore';
->>>>>>> TuanLe
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
