@@ -396,14 +396,20 @@ progress {
     align-items: center;
 }
 
+.bodyHomeMovie-more-right-actor-body-list-wrapper {
+    width: 780px;
+    overflow-x: hidden;
+}
+
 .bodyHomeMovie-more-right-actor-body-list {
     display: flex;
     justify-content: flex-start;
     width: 780px;
-    flex-wrap: no-wrap;
     overflow-x: hidden;
-    position: absolute;
-    transition: all ease 1s;
+    position: relative;
+    justify-content: flex-start;
+    transition: all ease 2s;
+    list-style: none;
 }
 
 .bodyHomeMovie-more-right-cmt {

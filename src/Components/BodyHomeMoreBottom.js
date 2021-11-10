@@ -17,7 +17,7 @@ function BodyHomeMoreBottom() {
         setPosters([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
       },[]); 
     useEffect(() => {
-        setArr2([...posters.slice(0, 13)]);
+        setArr2([...posters.slice(0, 14)]);
     }, [posters])
     useEffect(() => {
         setTrans(-(move.current.offsetWidth)*num)
@@ -60,7 +60,6 @@ function BodyHomeMoreBottom() {
 
             <div className="bodyHomeMovie-more-bottom-paging">
                 {
-
                     Array(number)
                     .fill()
                     .map((_, index) => (

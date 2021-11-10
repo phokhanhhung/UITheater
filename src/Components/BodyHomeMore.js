@@ -11,6 +11,8 @@ import BodyHomeMoreBottom from './BodyHomeMoreBottom'
 function BodyHomeMore() {
     const [posters, setPosters] = useState([]);
     const [arr, setArr] = useState([]);
+    const [num, setNum] = useState(0);
+    const [trans, setTrans] = useState(0);
 
     const actorList = useRef();
 
@@ -21,15 +23,17 @@ function BodyHomeMore() {
       },[]);
 
     useEffect(() => {
-        setArr([...posters.slice(0, 13)]);
+        setArr([...posters.slice(0, 14)]);
     }, [posters])
-   
-
+    useEffect(() => {
+        setTrans(-(actorList.current.offsetWidth)*num)
+    }, [num])
+      
     const handleClick1 = () => {
-        
+        setNum(num > 0 ? num - 1 : num )
     }
     const handleClick2 = () => {
-        
+        setNum(num < Math.ceil(actorList.current.childNodes.length / 6) - 1 ? num + 1 : num)
     }
     
     const handleClickExit = () => {
@@ -232,14 +236,22 @@ function BodyHomeMore() {
                                 <div className="bodyHomeMovie-more-right-actor-title">Diễn viên</div>
                                 <div className="bodyHomeMovie-more-right-actor-body">
                                     <i className="hot-movies-bottom-arrow-item fas fa-chevron-left" onClick={handleClick1}></i>
-                                    <ul className="bodyHomeMovie-more-right-actor-body-list" ref={actorList}>
-                                        {arr.map((_, index) => (
-                                            <BodyHomeMoreActor
-                                                key={index}
-                                                name="Jenny Wilson"
-                                            />
-                                        ))}
-                                    </ul>
+
+                                    <div className="bodyHomeMovie-more-right-actor-body-list-wrapper">
+                                        <ul 
+                                            className="bodyHomeMovie-more-right-actor-body-list" 
+                                            ref={actorList}
+                                            style={{left: trans+"px"}}
+                                        >
+                                            {arr.map((_, index) => (
+                                                <BodyHomeMoreActor
+                                                    key={index}
+                                                    name="Jenny Wilson"
+                                                />
+                                            ))}
+                                        </ul>
+                                    </div>
+
                                     <i className="hot-movies-bottom-arrow-item fas fa-chevron-right" onClick={handleClick2}></i>
                                 </div>
                             </div>
