@@ -3,10 +3,11 @@ import './App.css';
 import Header from './Components/Header.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BodyHome from './Components/BodyHome';
-
 import Footer from './Components/Footer';
 import AllMovies from './Components/AllMovies';
 import BodyHomeMore from './Components/BodyHomeMore';
+import BuyTicket from './Components/BuyTicket';
+import TheaterIntro from './Components/TheaterIntro';
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
@@ -35,9 +36,11 @@ function App() {
         <div className="app-wrap">
           <Header />
           <Switch>
-            <Route exact path="/"><BodyHome /></Route>
-            <Route path="/home"><BodyHome /></Route>
+            <Route exact path="/"><TheaterIntro /></Route>
+            <Route path="/home"><TheaterIntro /></Route>
+            <Route path="/phim"><BodyHome /></Route>
             <Route path="/categories"><AllMovies /></Route>
+            <Route path="/datve"><BuyTicket /></Route>
           </Switch>
           <Footer />
           {

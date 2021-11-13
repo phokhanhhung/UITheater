@@ -61,13 +61,13 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
                 <a href="/">
                     <img className="nav-left-logo-img" src={logo} alt="logo" />
                 </a>
-                <a href="/">
+                <Link to="/home">
                     <i className="nav-left-logo-icon fas fa-home"></i>
-                </a>
+                </Link>
                 
                 <ul className="nav-left-list">
                     <li>
-                        <Link to="/" className="nav-left-item">PHIM</Link>
+                        <Link to="/phim" className="nav-left-item">PHIM</Link>
                     </li>
                     <li>
                         <Link to="/" className="nav-left-item">LỊCH CHIẾU</Link>
