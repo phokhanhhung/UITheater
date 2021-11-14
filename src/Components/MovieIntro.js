@@ -18,8 +18,14 @@ function MovieIntro() {
                 Raya và Rồng Thần Cuối Cùng kể về một vương quốc huyền bí có tên là Kumandra – vùng đất mà loài rồng và con người sống hòa thuận với nhau. Nhưng rồi một thế lực đen tối bỗng đe dọa bình yên nơi đây, loài rồng buộc phải hi sinh để cứu lấy loài người...
             </div>
             <div className="movie-intro-btn">
-                <button className="movie-intro-btn-buy">Mua vé</button>
-                <button className="movie-intro-btn-more">Xem thêm</button>
+                <button className="movie-intro-btn-buy">
+                    <i className="movie-intro-btn-buy-icon fas fa-cart-arrow-down" aria-hidden="true"></i>
+                    Mua vé
+                </button>
+                <button className="movie-intro-btn-more">
+                    <i className="movie-intro-btn-buy-icon fas fa-exclamation-circle" aria-hidden="true"></i>
+                    Xem thêm
+                </button>
             </div>
         </div>    
     )

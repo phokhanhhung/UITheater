@@ -38,13 +38,33 @@ function BodyHomeMore() {
     
     const handleClickExit = () => {
         const BodyHomeMore = document.querySelector('.bodyHomeMovie-more');
+        const wrap = document.querySelector('.bodyHomeMovie-more-wrap')
+        const trailer = document.querySelector('.bodyHomeMovie-more-trailer')
+        const trailerMovie = document.querySelector('.bodyHomeMovie-more-trailer-movie')
+        
+        wrap.style.display = 'block';
+        trailer.style.display = 'block'
+        trailerMovie.src = ''
 
         BodyHomeMore.style.display = 'none';
         console.log(1);
     }
 
+    const handleTrailer = () => {
+        const trailerMovie = document.querySelector('.bodyHomeMovie-more-trailer-movie')
+        const trailer = document.querySelector('.bodyHomeMovie-more-trailer')
+        const wrap = document.querySelector('.bodyHomeMovie-more-wrap')
+        
+        trailer.style.display = 'block'
+        trailerMovie.src = 'https://www.youtube.com/embed/0pdqf4P9MB8'
+        wrap.style.display = 'none'
+    }
+
     return (
         <div className="bodyHomeMovie-more" onClick={handleClickExit}>
+                <div className="bodyHomeMovie-more-trailer">
+                    <iframe className="bodyHomeMovie-more-trailer-movie" src="https://www.youtube.com/embed/0pdqf4P9MB8" alt="trailer" title="trailer"/>
+                </div>
                 <div className="bodyHomeMovie-more-wrap" onClick={e => e.stopPropagation()}>
                     <div className="bodyHomeMovie-more-exit" onClick={handleClickExit}>
                         <i class="bodyHomeMovie-more-exit-icon fas fa-times-circle" />
@@ -52,13 +72,13 @@ function BodyHomeMore() {
 
                     <div className="bodyHomeMovie-more-body">
                         <div className="bodyHomeMovie-more-left">
-                            <img className="bodyHomeMovie-more-left-img" src={LaLaLandImage} />
+                            <img className="bodyHomeMovie-more-left-img" src={LaLaLandImage} alt="img"/>
                             <button className="bodyHomeMovie-more-left-btn1">
-                                <img className="bodyHomeMovie-more-left-btn1-img" src={HotIcon} />
+                                <img className="bodyHomeMovie-more-left-btn1-img" src={HotIcon} alt="icon"/>
                                 <p className="bodyHomeMovie-more-left-btn1-content">TOP 2 phim Hot tháng 10</p>
                             </button>
                             <button className="bodyHomeMovie-more-left-btn2">
-                                <img className="bodyHomeMovie-more-left-btn2-img" src={DoanhThu} />
+                                <img className="bodyHomeMovie-more-left-btn2-img" src={DoanhThu} alt="img"/>
                                 <p className="bodyHomeMovie-more-left-btn2-content">TOP 2 doanh thu tháng 10</p>
                             </button>
                             <div className="bodyHomeMovie-more-left-rating">
@@ -202,7 +222,7 @@ function BodyHomeMore() {
                                             <i class="bodyHomeMovie-more-right-movie-body-right-buy-cart fas fa-cart-arrow-down"></i>
                                             <p className="bodyHomeMovie-more-right-movie-body-right-buy-title">Mua vé</p>
                                         </button>
-                                        <button className="bodyHomeMovie-more-right-movie-body-right-trailer">
+                                        <button className="bodyHomeMovie-more-right-movie-body-right-trailer" onClick={handleTrailer}>
                                             <i class="bodyHomeMovie-more-right-movie-body-right-trailer-play fas fa-play"></i>
                                             <p className="bodyHomeMovie-more-right-movie-body-right-trailer-title">Trailer</p>
                                         </button>
@@ -273,7 +293,7 @@ function BodyHomeMore() {
                                 </div>
 
                                 <div className="bodyHomeMovie-more-right-cmt-more">
-                                    <a className="bodyHomeMovie-more-right-cmt-more-content">Xem thêm</a>
+                                    <a href="/" className="bodyHomeMovie-more-right-cmt-more-content">Xem thêm</a>
                                 </div>
                             </div>
 
@@ -285,8 +305,9 @@ function BodyHomeMore() {
 
                         <BodyHomeMoreBottom />
                     </div>
-                </div>
-          </div>
+                
+            </div>
+        </div>
     )
 }
 

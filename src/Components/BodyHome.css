@@ -1,4 +1,18 @@
 .bodyHome {
   max-width: 1300px;
   margin: 0 auto;
+  position: relative;
+}
+
+.wrap {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.movie-intro-wrapper {
+  background-image: url(../Assets/Images/posterrayawallpaper.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* position: absolute; */
+  /* height: 774px; */
 }

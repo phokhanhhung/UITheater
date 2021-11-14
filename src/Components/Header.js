@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Header.css'
 import Navigation from './Navigation'
-import MovieIntro from './MovieIntro'
-import HotMovies from './HotMovies'
+
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 
@@ -38,13 +37,7 @@ function Header() {
                 </div>
             </div>
 
-            <div className="wrap">
-                <MovieIntro />
-            </div>
-
-            <div className="wrap">
-                <HotMovies />
-            </div>
+            
 
             {showSignIn && <SignIn handleShowSignIn2={childShowSignIn2} />} 
             {showSignUp && <SignUp handleShowSignUp2={childShowSignUp2} />}

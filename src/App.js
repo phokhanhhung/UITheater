@@ -7,6 +7,8 @@ import BodyHome from './Components/BodyHome';
 import Footer from './Components/Footer';
 import AllMovies from './Components/AllMovies';
 import BodyHomeMore from './Components/BodyHomeMore';
+import News from './Components/News';
+import NewsItem from './Components/NewsItem';
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
@@ -38,6 +40,8 @@ function App() {
             <Route exact path="/"><BodyHome /></Route>
             <Route path="/home"><BodyHome /></Route>
             <Route path="/categories"><AllMovies /></Route>
+            <Route path="/news/"><News /></Route>
+            <Route path="/news/item/"><NewsItem /></Route>
           </Switch>
           <Footer />
           {
