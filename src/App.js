@@ -6,13 +6,10 @@ import BodyHome from './Components/BodyHome';
 import Footer from './Components/Footer';
 import AllMovies from './Components/AllMovies';
 import BodyHomeMore from './Components/BodyHomeMore';
-<<<<<<< HEAD
 import News from './Components/News';
 import NewsItem from './Components/NewsItem';
-=======
 import BuyTicket from './Components/BuyTicket';
 import TheaterIntro from './Components/TheaterIntro';
->>>>>>> KhanhHung
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
@@ -45,12 +42,9 @@ function App() {
             <Route path="/home"><TheaterIntro /></Route>
             <Route path="/phim"><BodyHome /></Route>
             <Route path="/categories"><AllMovies /></Route>
-<<<<<<< HEAD
             <Route path="/news/"><News /></Route>
-            <Route path="/news/item/"><NewsItem /></Route>
-=======
+            <Route path="/news-item/"><NewsItem /></Route>
             <Route path="/datve"><BuyTicket /></Route>
->>>>>>> KhanhHung
           </Switch>
           <Footer />
           {

@@ -222,13 +222,8 @@ function BodyHomeMore() {
                                             <i className="bodyHomeMovie-more-right-movie-body-right-buy-cart fas fa-cart-arrow-down"></i>
                                             <p className="bodyHomeMovie-more-right-movie-body-right-buy-title">Mua vé</p>
                                         </button>
-<<<<<<< HEAD
                                         <button className="bodyHomeMovie-more-right-movie-body-right-trailer" onClick={handleTrailer}>
                                             <i class="bodyHomeMovie-more-right-movie-body-right-trailer-play fas fa-play"></i>
-=======
-                                        <button className="bodyHomeMovie-more-right-movie-body-right-trailer">
-                                            <i className="bodyHomeMovie-more-right-movie-body-right-trailer-play fas fa-play"></i>
->>>>>>> KhanhHung
                                             <p className="bodyHomeMovie-more-right-movie-body-right-trailer-title">Trailer</p>
                                         </button>
                                     </div>

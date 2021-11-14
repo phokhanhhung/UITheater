@@ -4,6 +4,7 @@ import theater from '../Assets/Images/theater.png';
 import BodyHomeNav from './BodyHomeNav';
 import { Route } from 'react-router';
 import TheaterSystem from './TheaterSystem';
+import TheaterTechnology from './TheaterTechnology';
 
 function TheaterIntro() {
   return (
@@ -35,7 +36,7 @@ function TheaterIntro() {
                 />
                 <Route exact path="/"><TheaterSystem /></Route>
                 <Route exact path="/home/hethong"><TheaterSystem /></Route>
-                <Route exact path="/home/congnghe"><div>Tuấn làm công nghệ sử dụng nè!</div></Route>
+                <Route exact path="/home/congnghe"><TheaterTechnology /></Route>
                 <Route exact path="/home/dichvu"><div>Hưng làm dịch vụ nè!</div></Route>
               </div>
             </div>
