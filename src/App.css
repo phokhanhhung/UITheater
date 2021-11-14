@@ -8,13 +8,14 @@
   height: 100%;
 }
 
-/* .app-wrap::-webkit-scrollbar {
+/* .app::-webkit-scrollbar {
   width: 6px;
   background-color: #FFB7CE;
 }
 
-.app-wrap::-webkit-scrollbar-thumb {
-  background-color: bisque;
+.app::-webkit-scrollbar-thumb {
+  background-color: #000;
+  position: relative;
   z-index: 1000;
 }
 

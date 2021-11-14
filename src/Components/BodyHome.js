@@ -20,28 +20,32 @@ function BodyHome() {
           <HotMovies />
         </div>
       </div>
-
       <div className="bodyHome">
-        <BodyHomeNav />
 
-
-        <Route exact path="/">
-          <BodyHomeMovies name="dangchieu"/>
-        </Route>
-
-        <Route exact path="/home/dangchieu">
+        <BodyHomeNav
+          preStage="/phim"
+          stage1="dangchieu"
+          stage2="sapchieu"
+          stage3="dacbiet"
+          title1="PHIM ĐANG CHIẾU"
+          title2="PHIM SẮP CHIẾU"
+          title3="SUẤT CHIẾU ĐẶC BIỆT"
+        />
+        <Route exact path="/phim">
           <BodyHomeMovies name="dangchieu" />
         </Route>
 
-        <Route exact path="/home/sapchieu">
+        <Route exact path="/phim/dangchieu">
+          <BodyHomeMovies name="dangchieu" />
+        </Route>
+
+        <Route exact path="/phim/sapchieu">
           <BodyHomeMovies name="sapchieu" />
         </Route>
 
-        <Route exact path="/home/dacbiet">
+        <Route exact path="/phim/dacbiet">
           <BodyHomeMovies name="dacbiet" />
         </Route>
-
-        
         <BodyHomeSuggest />
       </div>
     </div>

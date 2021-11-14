@@ -1,0 +1,70 @@
+.theaterIntro-background-color1 {
+  background: linear-gradient(to bottom, #A5678E, #7FACD6);
+}
+
+.theaterIntro-background-img {
+  background-image: url('../Assets/Images/Rectangle\ 406.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.theaterIntro-background-color2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 200px;
+}
+
+.theaterIntro {
+  width: 1300px;
+  padding: 400px 90px 0;
+  margin: 0 auto;
+}
+
+.theaterIntro > h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ECDEE3;
+  padding-left: 80px;
+  margin-bottom: 35px;
+}
+
+.theaterIntro__brand {
+  width: 100%;
+  display: flex;
+  background-color: rgba(225, 225, 225, 0.5);
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-bottom: 35px;
+}
+
+.theaterIntro__brand > img {
+  object-fit: contain;
+  width: 222px;
+}
+
+.theaterIntro__brand .theaterIntro__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 80px;
+}
+
+.theaterIntro__brand .theaterIntro__info > h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.theaterIntro__brand .theaterIntro__info > p {
+  font-size: 20px;
+}
+
+.theaterIntro__movie-theaters {
+  width: 100%;
+  background: linear-gradient(to bottom, #A5678E, #7FACD6);
+  border-radius: 30px;
+}
+
+.theaterIntro__movie-theaters-background {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 10px 50px 150px;  
+  border-radius: 30px;
+}

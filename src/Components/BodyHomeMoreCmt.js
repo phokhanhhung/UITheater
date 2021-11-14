@@ -18,11 +18,11 @@ function BodyHomeMoreCmt() {
                     </div>
 
                     <div className="bodyHomeMovie-more-right-cmt-item-content-top-star">
-                        <i class="bodyHomeMovie-more-right-cmt-item-content-top-star-icon fas fa-star"></i>
-                        <i class="bodyHomeMovie-more-right-cmt-item-content-top-star-icon fas fa-star"></i>
-                        <i class="bodyHomeMovie-more-right-cmt-item-content-top-star-icon far fa-star"></i>
-                        <i class="bodyHomeMovie-more-right-cmt-item-content-top-star-icon far fa-star"></i>
-                        <i class="bodyHomeMovie-more-right-cmt-item-content-top-star-icon far fa-star"></i>
+                        <i className="bodyHomeMovie-more-right-cmt-item-content-top-star-icon fas fa-star"></i>
+                        <i className="bodyHomeMovie-more-right-cmt-item-content-top-star-icon fas fa-star"></i>
+                        <i className="bodyHomeMovie-more-right-cmt-item-content-top-star-icon far fa-star"></i>
+                        <i className="bodyHomeMovie-more-right-cmt-item-content-top-star-icon far fa-star"></i>
+                        <i className="bodyHomeMovie-more-right-cmt-item-content-top-star-icon far fa-star"></i>
                     </div>
                 </div>
 
