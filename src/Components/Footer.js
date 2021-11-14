@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import ios from '../Assets/Images/app_store.png';
 import android from '../Assets/Images/google_play.png';
@@ -48,7 +49,7 @@ function Footer() {
                   <li className="footer_media_division"></li>
                   <li><a href="#" target="_blank">Chính sách & quy định</a></li>
                   <li className="footer_media_division"></li>
-                  <li><a href="#" target="_blank">Tuyển dụng</a></li>
+                  <li><Link to="/tuyendung">Tuyển dụng</Link></li>
                   <li className="footer_media_division"></li>
                   <li><a href="#" target="_blank">Liên hệ</a></li>
               </ul>

@@ -82,6 +82,11 @@
   border: none;
 }
 
+.bodyHomeMovie_infor button > a {
+  text-decoration: none;
+  color: #000;
+}
+
 .bodyHomeMovie_infor button i {
   margin-right: 8px;
 }

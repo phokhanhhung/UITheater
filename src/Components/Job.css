@@ -1,0 +1,52 @@
+.job {
+  width: 387px;
+}
+
+.job > img {
+  object-fit: contain;
+  display: block;
+}
+
+.job__info-background-color {
+  background: linear-gradient(to bottom, #A5678E, #7FACD6);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.job__info {
+  height: 150px;
+  padding: 5px 20px 15px 10px;
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job__info > h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FAC2CE;
+}
+
+.job__info > p {
+  color: #C2C1C1;
+  font-size: 14px;
+  text-align: justify;
+  margin: 5px 0;
+}
+
+.job__more-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job__more-info > span {
+  font-size: 15px;
+  color: #BBBCBE;
+}
+
+.job__more-info > span:nth-child(2) {
+  margin-right: -15px;
+}

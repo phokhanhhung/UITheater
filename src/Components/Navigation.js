@@ -70,7 +70,7 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
                         <Link to="/phim" className="nav-left-item">PHIM</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item">LỊCH CHIẾU</Link>
+                        <Link to="/lichchieu" className="nav-left-item">LỊCH CHIẾU</Link>
                     </li>
                     <li>
                         <Link to="/" className="nav-left-item">RẠP & GIÁ VÉ</Link>

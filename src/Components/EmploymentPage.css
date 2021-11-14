@@ -1,0 +1,79 @@
+.employmentPage__background-color1 {
+  background: linear-gradient(to bottom, #A5678E, #7FACD6);
+}
+
+.employmentPage__background-color2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 190px 0 100px;
+}
+
+.employmentPage {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.employmentPage > h1{
+  color: #E7E8E9;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.employmentPage__jobs-wrapper {
+  margin: 0 -32px;
+}
+
+.employmentPage__jobs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.employmentPage__job {
+  width: 33.333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-bottom: 70px;
+}
+
+/* ------------------------ */
+
+
+.employmentPage__paging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: -50px auto 0;
+}
+
+.employmentPage__paging-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+} 
+
+.employmentPage__paging > i {
+  width: 50px;
+  font-size: 25px;
+  text-align: center;
+  color: #98D4DC;
+  cursor: pointer;
+}
+
+.employmentPage__paging-list li {
+  width: 28px;    
+  height: 28px;
+  line-height: 28px;  
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.employmentPage__paging-list > li.onPage {
+  border-radius: 15px;
+  background-color: #98D4DC;
+  color: #000;
+}

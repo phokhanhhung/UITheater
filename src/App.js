@@ -8,6 +8,8 @@ import AllMovies from './Components/AllMovies';
 import BodyHomeMore from './Components/BodyHomeMore';
 import BuyTicket from './Components/BuyTicket';
 import TheaterIntro from './Components/TheaterIntro';
+import ShowtimePage from './Components/ShowtimePage';
+import EmploymentPage from './Components/EmploymentPage';
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
@@ -39,8 +41,10 @@ function App() {
             <Route exact path="/"><TheaterIntro /></Route>
             <Route path="/home"><TheaterIntro /></Route>
             <Route path="/phim"><BodyHome /></Route>
+            <Route path="/lichchieu"><ShowtimePage /></Route>
             <Route path="/categories"><AllMovies /></Route>
             <Route path="/datve"><BuyTicket /></Route>
+            <Route path="/tuyendung"><EmploymentPage /></Route>
           </Switch>
           <Footer />
           {
