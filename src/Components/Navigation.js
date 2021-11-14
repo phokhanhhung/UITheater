@@ -76,7 +76,7 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
                         <Link to="/" className="nav-left-item">RẠP & GIÁ VÉ</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item">TIN TỨC</Link>
+                        <Link to="/news/" className="nav-left-item">TIN TỨC</Link>
                     </li>
                     <li>
                         <Link to="/" className="nav-left-item">LIÊN HỆ</Link>

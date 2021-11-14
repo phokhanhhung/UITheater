@@ -6,6 +6,8 @@ import BodyHome from './Components/BodyHome';
 import Footer from './Components/Footer';
 import AllMovies from './Components/AllMovies';
 import BodyHomeMore from './Components/BodyHomeMore';
+import News from './Components/News';
+import NewsItem from './Components/NewsItem';
 import BuyTicket from './Components/BuyTicket';
 import TheaterIntro from './Components/TheaterIntro';
 import ShowtimePage from './Components/ShowtimePage';
@@ -43,6 +45,8 @@ function App() {
             <Route path="/phim"><BodyHome /></Route>
             <Route path="/lichchieu"><ShowtimePage /></Route>
             <Route path="/categories"><AllMovies /></Route>
+            <Route path="/news/"><News /></Route>
+            <Route path="/news-item/"><NewsItem /></Route>
             <Route path="/datve"><BuyTicket /></Route>
             <Route path="/tuyendung"><EmploymentPage /></Route>
           </Switch>

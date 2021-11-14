@@ -1,0 +1,38 @@
+.news-trailer {
+    margin-top: 80px;
+}
+
+.news-trailer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.news-trailer-top-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #C0556F;
+}
+
+.news-trailer-top-more {
+    display: flex;
+    align-items: center;
+}
+
+.news-trailer-top-more-content {
+    font-size: 18px;
+    font-style: italic;
+    color: #67A3AA;
+    padding-right: 5px;
+}
+
+.news-trailer-top-more-icon {
+    font-size: 14px;
+    color: #67A3AA;
+}
+
+.news-trailer-body {
+    display: flex;
+    flex-wrap: wrap;
+}

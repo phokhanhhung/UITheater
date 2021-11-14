@@ -1,0 +1,44 @@
+.theater-technology-item {
+    display: flex;
+    position: relative;
+    height: 400px;
+    justify-content: flex-end;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.theater-technology-item-img {
+    font-size: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.theater-technology-item-content {
+    width: 850px;
+    height: 350px;
+    border-radius: 60px;
+    background-color: #312C46;
+    overflow: hidden;
+}
+
+.theater-technology-item-content-title {
+    height: 70px;
+    font-size: 36px;
+    font-weight: bold;
+    padding-left: 275px;
+    color: black;
+    background-color: #D68F95;
+    display: flex;
+    align-items: center;
+}
+
+.theater-technology-item-content-desc {
+    color: white;
+    padding: 15px;
+    text-align: justify;
+    padding-left: 275px;
+    padding-right: 30px;
+    font-size: 18px;
+}

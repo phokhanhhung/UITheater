@@ -1,0 +1,40 @@
+.news-trending-item {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.news-trending-item-img {
+    width: 275px;
+
+}
+
+.news-trending-item-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.news-trending-item-bottom {
+    font-size: 15px;
+    color: #67A3AA;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news-trending-item-bottom-time {
+    font-style: italic;
+}
+
+.news-trending-item-bottom-viewer {
+
+}
+
+.news-trending-item-bottom-viewer-icon {
+    padding-right: 4px;
+}

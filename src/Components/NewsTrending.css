@@ -1,0 +1,33 @@
+.news-trending {
+    margin-top: 80px;
+}
+
+.news-trending-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.news-trending-top-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #C0556F;
+}
+
+.news-trending-top-more {
+    display: flex;
+    align-items: center;
+}
+
+.news-trending-top-more-content {
+    font-size: 18px;
+    font-style: italic;
+    color: #67A3AA;
+    padding-right: 5px;
+}
+
+.news-trending-top-more-icon {
+    font-size: 14px;
+    color: #67A3AA;
+}

@@ -55,6 +55,10 @@
     background-color: #b16173;
 }
 
+.movie-intro-btn-buy-icon {
+    margin-right: 5px;
+}
+
 .movie-intro-btn-more {
     border-radius: 10px;
     border: transparent;
