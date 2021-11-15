@@ -55,11 +55,18 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
         handleShowSignUp1(true);
     }
 
+    const handleActive = (e) => {
+        const active = document.querySelector('.nav-left-item--active')
+
+        active.classList.remove('nav-left-item--active')
+        e.target.classList.add('nav-left-item--active')
+    }
+
     return (
         <div className="nav" onClick={handleClickNav}>
             <div className="nav-left">
                 <a href="/">
-                    <img className="nav-left-logo-img" src={logo} alt="logo" />
+                    <img className="nav-left-logo-img nav-left-item--active" src={logo} alt="logo" />
                 </a>
                 <Link to="/home">
                     <i className="nav-left-logo-icon fas fa-home"></i>
@@ -67,19 +74,19 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
                 
                 <ul className="nav-left-list">
                     <li>
-                        <Link to="/phim" className="nav-left-item">PHIM</Link>
+                        <Link to="/phim" className="nav-left-item" onClick={e => handleActive(e)}>PHIM</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item">LỊCH CHIẾU</Link>
+                        <Link to="/" className="nav-left-item" onClick={e => handleActive(e)}>LỊCH CHIẾU</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item">RẠP & GIÁ VÉ</Link>
+                        <Link to="/" className="nav-left-item" onClick={e => handleActive(e)}>RẠP & GIÁ VÉ</Link>
                     </li>
                     <li>
-                        <Link to="/news/" className="nav-left-item">TIN TỨC</Link>
+                        <Link to="/news/" className="nav-left-item" onClick={e => handleActive(e)}>TIN TỨC</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item">LIÊN HỆ</Link>
+                        <Link to="/" className="nav-left-item" onClick={e => handleActive(e)}>LIÊN HỆ</Link>
                     </li>
                 </ul>
             </div>

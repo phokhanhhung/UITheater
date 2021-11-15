@@ -43,6 +43,10 @@
     color: #F5859D;
 }
 
+.nav-left-item--active {
+    color: #F5859D;
+}
+
 .nav-right {
     width: 500px;
     display: flex;
