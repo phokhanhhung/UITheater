@@ -1,0 +1,201 @@
+*{
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.searchingResult-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), linear-gradient(180deg, #A5678E 0%, #7FACD6 100%);
+}
+
+.searchingResult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(73, 82, 109, 0.5);
+    border-radius: 300px 300px 0px 0px;
+    width: 90vw;
+    margin: 120px 0px;
+    padding-bottom: 80px;
+}
+
+.searchingResult__header-image{
+    margin-top: -100px;
+}
+
+.searchingResult__header{
+    font-size: 2.25rem;
+    color: #ffffff;
+}
+
+.searchingResult__keyword{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.searchingResult__result{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    background-color: rgba(70, 62, 106, 0.5);
+    border-radius: 30px;
+    margin-top: 60px;
+}
+/*movie result*/
+.searchingResult__result--movie .result__play-button{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.searchingResult__result--movie .result__information{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    width: 660px;
+}
+
+.searchingResult__result--movie .information__top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #49526D;
+}
+
+.searchingResult__result--movie .information__starVoting{
+    width: 100%;
+}
+
+.searchingResult__result--movie .information__title{
+    letter-spacing: .07rem;
+    font-size: 2.25rem;
+    color: #C0556F;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.searchingResult__result--movie .information__title:hover{
+    text-decoration: underline;
+}
+
+.searchingResult__result--movie .information__index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #98D4DC;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #49526D;
+    margin: 0px 110px 0px 30px;
+}
+
+.searchingResult__result--movie .information__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0px 0px 10px 20px;
+    cursor: pointer;
+}
+
+.searchingResult__result--movie .information__button:hover{
+    opacity: .5;
+}
+
+.searchingResult__result--movie .information__button--buyTicket{
+    background-color: #F5859D;
+    color: #000000;
+    padding: 0px 20px;
+}
+
+.searchingResult__result--movie .information__button--moreDetails{
+    background-color: #ECDEE3;
+    color: #49526D;
+    padding: 0px 10px;
+}
+
+.searchingResult__result--movie .information__category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 25px;
+    border: solid 1px rgba(103, 163, 170, 1);
+    font-size: .875rem;
+    color: rgba(103, 163, 170, 1);
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.searchingResult__result--movie .information__detail{
+    font-size: .875rem;
+    color: #ffffff;
+}
+
+.searchingResult__result--movie .information__detail span{
+    display: inline-block;
+    color: #C0556F;
+    width: 90px;
+}
+
+/*news result*/
+.searchingResult__result--news .result__information{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 30px;
+    width: 750px;
+}
+
+.searchingResult__result--news .information__title{
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    color: #ffffff;
+    margin: 0;
+    cursor: pointer;
+}
+
+.searchingResult__result--news .information__title:hover{
+    text-decoration: underline;
+}
+
+.searchingResult__result--news .information__title span{
+    color: #C0556F;
+}
+
+.searchingResult__result--news .information__detail{
+    font-size: .875rem;
+    line-height: 1rem;
+    text-align: justify;
+    color: #C2C1C1;
+    margin: 0;
+}
+
+.searchingResult__result--news .information__view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 1rem;
+    color: #67A3AA;
+}
+
+.searchingResult__result--news .information__modified{
+    margin-left: 60px;
+    font-size: 1rem;
+    font-style: italic;
+    color: #67A3AA;
+}

@@ -1,0 +1,52 @@
+*{
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.policies-container{
+    height: 100vh;
+    width: 1200px;
+    background: url(theater-background.png) no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.icon--exit{
+    align-self: flex-end;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.container__policies{
+    width: 1000px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    padding: 40px 80px;
+    margin-bottom: 80px;
+}
+.policies__header h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #C0556F;
+    z-index: 0;
+}
+.policies__content{
+    height: 60vh;
+    overflow: auto;
+}
+.policies__content p{
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+}
+
+.policies__content h3{
+    font-size: 1,25rem;
+}
