@@ -10,6 +10,8 @@ import News from './Components/News';
 import NewsItem from './Components/NewsItem';
 import BuyTicket from './Components/BuyTicket';
 import TheaterIntro from './Components/TheaterIntro';
+import Contact from './Components/Contact';
+import SearchingResultPage from './Components/SearchingResultPage';
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
@@ -45,6 +47,8 @@ function App() {
             <Route path="/news/"><News /></Route>
             <Route path="/news-item/"><NewsItem /></Route>
             <Route path="/datve"><BuyTicket /></Route>
+            <Route path="/contact/"><Contact /></Route>
+            <Route path="/searching-page/"><SearchingResultPage /></Route>
           </Switch>
           <Footer />
           {
