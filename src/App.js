@@ -61,13 +61,10 @@ function App() {
             <Route path="/news/"><News /></Route>
             <Route path="/news-item/"><NewsItem /></Route>
             <Route path="/datve"><BuyTicket /></Route>
-<<<<<<< HEAD
             <Route path="/tuyendung"><EmploymentPage /></Route>
             <Route path="/rap&giave"><TheaterPrice /></Route>
-=======
             <Route path="/contact/"><Contact /></Route>
             <Route path="/searching-page/"><SearchingResultPage /></Route>
->>>>>>> TuanLe
           </Switch>
           <Footer childFooterState={handleShow}/>
           {
