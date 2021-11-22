@@ -1,6 +1,6 @@
 .buyTicket__background-color1 {
   background: linear-gradient(to bottom, #A5678E, #7FACD6);
-  width: 100vw;
+  width: 100%;
   height: 100%;
 }
 
@@ -641,6 +641,7 @@
   height: 15px;  
   background-color: #49526D;
   margin: 0 auto;
+  opacity: 0.6;
 }
 
 .buyTicket__ticket-half-circle-top {

@@ -1,0 +1,140 @@
+.cinema__ticket{
+  background-image: url('../Assets/Images/TheaterPrice-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cinema__ticket-container{
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-bottom: 100px;
+}
+
+.cinema__ticket-header {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.cinema__ticket-header h1 {
+  margin: 0;
+  padding-top: 186px;
+  color: #ECDEE3;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.cinema__ticket-header-choose{
+  display: flex;
+  padding-top: 12px;
+  color: #98D4DC;
+  font-weight: bold;
+  font-size: 24px;
+  align-items: center; 
+}
+
+.cinema__ticket-header-choose-cinema {
+  display: flex;
+  padding-right: 35px;
+  justify-content: space-between;
+  border: 1px solid #98D4DC;
+  margin-left: 27px;
+  padding-left: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: rgba(152, 212, 220, 25%)
+}
+
+.cinema__ticket-header-choose-cinema i {
+  margin-top: -9px;
+  padding-left: 32px;
+  color: #98D4DC;
+  font-size: 35px;
+}
+
+.cinema__ticket-header-info{
+  width: 1300px;
+  height: 180px;
+  margin: 18px auto 0;;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;  
+  border-radius: 10px;
+}
+
+.cinema__ticket-header-info img {
+  width: 261px;
+  height: 150px;
+  margin: 15px 35px 15px 40px;
+}
+
+.cinema__ticket-header-info h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top:20px;
+}
+
+.cinema__ticket-header-info-muc-line{
+  padding-left:13px;
+  font-weight: 400;
+  padding-top: 7px;
+  font-size: 20px;
+}
+
+
+.cinema__ticket-header-info-muc-line i{
+  padding-right:9px;
+  
+}
+
+.cinema__ticket-header-info-muc-line-map1{
+  color:#67A3AA;
+}
+
+.cinema__ticket-header-info-muc-line-map2{
+  color:#C0556F;
+}
+
+.cinema__ticket-header-info-muc-line-map3{
+  color:#1877F2;
+}
+.cinema__ticket-background{
+  background-color:rgba(0, 0, 0, 0.45);  
+  height: 1411px;
+  padding: 0 124px;
+}
+.cinema__ticket-body{
+  width: 1300px;
+  margin: 29px auto 0;
+  background: linear-gradient(to bottom,rgb(165,103,142),rgb(127,172,214));
+  border-radius: 30px;
+}
+
+.cinema__ticket-text{
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:30px;
+  padding-bottom:46px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#ECDEE3;
+}
+
+.cinema__ticket-text-icon{
+  padding-right: 20px;
+}
+
+.cinema__ticket-text hr{
+  color:#ECDEE3;
+  width: 587px;
+}
+
+.cinema__ticket-pic img {
+  display: block;
+  margin: 0 auto;
+}
+
+.cinema__ticket-pic > img:last-child {
+  margin-top: 29px;
+}

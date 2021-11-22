@@ -71,6 +71,11 @@
   background-color: #ECDEE3;
 }
 
+.showtimePageMovie__info-background-color > button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .showtimePageMovie__info-background-color > button:nth-child(5) {
   margin-right: 8px;
 }

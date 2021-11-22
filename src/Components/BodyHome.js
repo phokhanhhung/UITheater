@@ -1,6 +1,6 @@
 import React from 'react';
 import './BodyHome.css';
-import { Switch, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import BodyHomeNav from './BodyHomeNav';
 import BodyHomeMovies from './BodyHomeMovies';
 import BodyHomeSuggest from './BodyHomeSuggest';

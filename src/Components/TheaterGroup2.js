@@ -1,7 +1,7 @@
 import React from 'react';
 import './TheaterGroup2.css';
 import fb from '../Assets/Images/facebook.png';
-import theater from '../Assets/Images/Rectangle 406.png';
+import theaterBed from '../Assets/Images/uitheater giường nằm.png';
 
 function TheaterGroup2() {
   return (
@@ -21,7 +21,7 @@ function TheaterGroup2() {
           <p>https://www.facebook.com/Dannnnnnnnn1601</p>
         </div>      
       </div>
-      <img src={theater} alt="Movie Theater" />
+      <img src={theaterBed} alt="Movie Theater" />
     </div>
   )
 }

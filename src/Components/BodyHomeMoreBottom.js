@@ -16,12 +16,15 @@ function BodyHomeMoreBottom() {
         // .then((data) => setPosters(data.recordset));
         setPosters([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
       },[]); 
+
     useEffect(() => {
         setArr2([...posters.slice(0, 14)]);
     }, [posters])
+
     useEffect(() => {
         setTrans(-(move.current.offsetWidth)*num)
     }, [num])
+    
     useEffect(() => {
         setNumber(Math.ceil(move.current.childNodes.length/6));
     })    

@@ -9,7 +9,7 @@ import instar from '../Assets/Images/instagram.png';
 import contact from '../Assets/Images/contact.svg';
 import logo from '../Assets/Images/logo.png';
 
-function Footer() {
+function Footer({childFooterState}) {
   return (
     <div className="footer">
       <div className="footer_downloadWrap">
@@ -47,7 +47,7 @@ function Footer() {
               <ul className="footer_moreInfor">
                   <li><a href="#" target="_blank">Về UITheater</a></li>
                   <li className="footer_media_division"></li>
-                  <li><a href="#" target="_blank">Chính sách & quy định</a></li>
+                  <li onClick={() => childFooterState(true)}>Chính sách & quy định</li>
                   <li className="footer_media_division"></li>
                   <li><Link to="/tuyendung">Tuyển dụng</Link></li>
                   <li className="footer_media_division"></li>

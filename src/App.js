@@ -12,9 +12,20 @@ import BuyTicket from './Components/BuyTicket';
 import TheaterIntro from './Components/TheaterIntro';
 import ShowtimePage from './Components/ShowtimePage';
 import EmploymentPage from './Components/EmploymentPage';
+import TheaterPrice from './Components/TheaterPrice';
+import Policy from './Components/Policy';
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
+  const [isPolicy, setIsPolicy] = useState(false);
+
+  const handleUnShow = (state) => {
+    setIsPolicy(state);
+  } 
+
+  const handleShow = (state) => {
+    setIsPolicy(state)
+  }
 
   const handleScroll = () => {
     if (window.scrollY > 1)
@@ -49,8 +60,9 @@ function App() {
             <Route path="/news-item/"><NewsItem /></Route>
             <Route path="/datve"><BuyTicket /></Route>
             <Route path="/tuyendung"><EmploymentPage /></Route>
+            <Route path="/rap&giave"><TheaterPrice /></Route>
           </Switch>
-          <Footer />
+          <Footer childFooterState={handleShow}/>
           {
             showGoToTop && (
               <button className="btn-gototop" onClick={handleGoToTop}>
@@ -59,6 +71,7 @@ function App() {
             )
           }
           <BodyHomeMore />
+          { isPolicy && <Policy childPolicyState={handleUnShow}/> }
         </div>
       </div>
     </Router>

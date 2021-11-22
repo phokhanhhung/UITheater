@@ -223,7 +223,7 @@ function BodyHomeMore() {
                                             <p className="bodyHomeMovie-more-right-movie-body-right-buy-title">Mua vé</p>
                                         </button>
                                         <button className="bodyHomeMovie-more-right-movie-body-right-trailer" onClick={handleTrailer}>
-                                            <i class="bodyHomeMovie-more-right-movie-body-right-trailer-play fas fa-play"></i>
+                                            <i className="bodyHomeMovie-more-right-movie-body-right-trailer-play fas fa-play"></i>
                                             <p className="bodyHomeMovie-more-right-movie-body-right-trailer-title">Trailer</p>
                                         </button>
                                     </div>

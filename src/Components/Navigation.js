@@ -61,7 +61,7 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
                 <a href="/">
                     <img className="nav-left-logo-img" src={logo} alt="logo" />
                 </a>
-                <Link to="/home">
+                <Link to="/">
                     <i className="nav-left-logo-icon fas fa-home"></i>
                 </Link>
                 
@@ -73,7 +73,7 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
                         <Link to="/lichchieu" className="nav-left-item">LỊCH CHIẾU</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item">RẠP & GIÁ VÉ</Link>
+                        <Link to="/rap&giave" className="nav-left-item">RẠP & GIÁ VÉ</Link>
                     </li>
                     <li>
                         <Link to="/news/" className="nav-left-item">TIN TỨC</Link>
