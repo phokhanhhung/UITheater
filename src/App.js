@@ -14,6 +14,8 @@ import ShowtimePage from './Components/ShowtimePage';
 import EmploymentPage from './Components/EmploymentPage';
 import TheaterPrice from './Components/TheaterPrice';
 import Policy from './Components/Policy';
+import Contact from './Components/Contact';
+import SearchingResultPage from './Components/SearchingResultPage';
 
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
@@ -59,8 +61,13 @@ function App() {
             <Route path="/news/"><News /></Route>
             <Route path="/news-item/"><NewsItem /></Route>
             <Route path="/datve"><BuyTicket /></Route>
+<<<<<<< HEAD
             <Route path="/tuyendung"><EmploymentPage /></Route>
             <Route path="/rap&giave"><TheaterPrice /></Route>
+=======
+            <Route path="/contact/"><Contact /></Route>
+            <Route path="/searching-page/"><SearchingResultPage /></Route>
+>>>>>>> TuanLe
           </Switch>
           <Footer childFooterState={handleShow}/>
           {

@@ -2,12 +2,10 @@ import React, {useState, useEffect} from 'react'
 import './Navigation.css'
 import logo from '../Assets/Images/logo.png'
 import { Link } from 'react-router-dom'
-import Search  from './Search'
-
 
 function Navigation({handleShowSignIn1, handleShowSignUp1}) {
-    const [search, setSearch] = useState(false)
-
+    const [inputSearch, setInputSearch] = useState('')
+    
     useEffect(() => {
         const handleScroll = () => {
             const navigation = document.querySelector('.navigation')
@@ -24,24 +22,24 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
     })
     
     const handleSearch = () => {
-        const change = document.querySelector('.nav-right-search')
-        const change2 = document.querySelector('.nav-right-search-icon')
+        const change = document.querySelector('.nav-right-search-icon')
+        const change2 = document.querySelector('.nav-right-search')
         
-        setSearch(!search)
-    
-        if (search) {
-            change.style.display = 'flex';
-            change2.style.display = 'none';
+        change.style.display = 'none';
+        change2.style.display = 'flex';
+        
+    }
 
-        } else {
-            change.style.display = 'none';
-        }
+    const handleOpenSearch = () => {
+        // const input = document.querySelector('.search-input')
+
+        // console.log(input.getAttribute("value"));
     }
 
     const handleClickNav = () => {
         const change = document.querySelector('.nav-right-search')
         const change2 = document.querySelector('.nav-right-search-icon')
-        if (change.style.display === 'flex' && !search) {
+        if (change.style.display === 'flex') {
             change.style.display = 'none';
             change2.style.display = 'inline-block';
         }
@@ -55,11 +53,18 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
         handleShowSignUp1(true);
     }
 
+    const handleActive = (e) => {
+        const active = document.querySelector('.nav-left-item--active')
+
+        active.classList.remove('nav-left-item--active')
+        e.target.classList.add('nav-left-item--active')
+    }
+
     return (
         <div className="nav" onClick={handleClickNav}>
             <div className="nav-left">
                 <a href="/">
-                    <img className="nav-left-logo-img" src={logo} alt="logo" />
+                    <img className="nav-left-logo-img nav-left-item--active" src={logo} alt="logo" />
                 </a>
                 <Link to="/">
                     <i className="nav-left-logo-icon fas fa-home"></i>
@@ -67,28 +72,30 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
                 
                 <ul className="nav-left-list">
                     <li>
-                        <Link to="/phim" className="nav-left-item">PHIM</Link>
+                        <Link to="/phim" className="nav-left-item" onClick={e => handleActive(e)}>PHIM</Link>
                     </li>
                     <li>
-                        <Link to="/lichchieu" className="nav-left-item">LỊCH CHIẾU</Link>
+                        <Link to="/" className="nav-left-item" onClick={e => handleActive(e)}>LỊCH CHIẾU</Link>
                     </li>
                     <li>
-                        <Link to="/rap&giave" className="nav-left-item">RẠP & GIÁ VÉ</Link>
+                        <Link to="/" className="nav-left-item" onClick={e => handleActive(e)}>RẠP & GIÁ VÉ</Link>
                     </li>
                     <li>
-                        <Link to="/news/" className="nav-left-item">TIN TỨC</Link>
+                        <Link to="/news/" className="nav-left-item" onClick={e => handleActive(e)}>TIN TỨC</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item">LIÊN HỆ</Link>
+                        <Link to="/contact/" className="nav-left-item" onClick={e => handleActive(e)}>LIÊN HỆ</Link>
                     </li>
                 </ul>
             </div>
 
-            <div className="nav-right">
+            <div className="nav-right" onClick={e => e.stopPropagation()}>
                 <i className="nav-right-search-icon fas fa-search" onClick={handleSearch}></i>
                 <div className="nav-right-search">
-                    <Search />
-                    <i className="nav-right-search-icon2 fas fa-search"></i>
+                    <input className="search-input" placeholder="Tìm kiếm" value={inputSearch} onChange={e => setInputSearch(e.target.value)}></input>
+                    <Link to="/searching-page/">
+                        <i className="nav-right-search-icon2 fas fa-search" onClick={handleOpenSearch}></i>
+                    </Link>
                 </div>
                 <button className="nav-right-register" onClick={handleSignUp}>Đăng ký</button>
                 <button className="nav-right-login" onClick={handleSignIn}>Đăng nhập</button>
