@@ -20,6 +20,7 @@ import SearchingResultPage from './Components/SearchingResultPage';
 function App() {
   const [showGoToTop, setShowGoToTop] = useState(false);
   const [isPolicy, setIsPolicy] = useState(false);
+  const [search, setSearch] = useState('');
 
   const handleUnShow = (state) => {
     setIsPolicy(state);
@@ -47,11 +48,19 @@ function App() {
     window.addEventListener('scroll', handleScroll)
   }, [])
 
+  const childState = (state) => {
+    setSearch(state);
+  }
+
+  useEffect(() => {
+    console.log(search);
+  }, [search]);
+
   return (
     <Router>
       <div className="app">
         <div className="app-wrap">
-          <Header />
+          <Header handleSearch={childState}/>
           <Switch>
             <Route exact path="/"><TheaterIntro /></Route>
             <Route path="/home"><TheaterIntro /></Route>
@@ -64,7 +73,7 @@ function App() {
             <Route path="/tuyendung"><EmploymentPage /></Route>
             <Route path="/rap&giave"><TheaterPrice /></Route>
             <Route path="/contact/"><Contact /></Route>
-            <Route path="/searching-page/"><SearchingResultPage /></Route>
+            <Route path="/searching-page/"><SearchingResultPage search={search}/></Route>
           </Switch>
           <Footer childFooterState={handleShow}/>
           {

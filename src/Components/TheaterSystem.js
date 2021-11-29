@@ -14,7 +14,7 @@ function TheaterSystem() {
   const creators = [{
     img: Dan,
     name: "Nguyễn Duy An",
-    position: "C.E.O Comminication",
+    position: "C.E.O Communication",
     color: "#0474C6",
   }, {
     img: ThaoDao,

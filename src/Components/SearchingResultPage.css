@@ -194,3 +194,17 @@
     font-style: italic;
     color: #67A3AA;
 }
+
+.searchingResult__wrap {
+    margin: 0 -32px;
+    width: 100%;
+}
+  
+.searchingResult__movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+    align-items: center;
+    width: 100%;
+}
+  

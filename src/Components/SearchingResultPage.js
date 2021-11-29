@@ -1,73 +1,88 @@
-import React from 'react'
-import './SearchingResultPage.css'
-import { useState, useEffect } from 'react'
+import  React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './SearchingResultPage.css';
+import SearchingPoster1 from '../Assets/Images/searching-poster-1.png';
+import SearchingPoster2 from '../Assets/Images/searching-poster-2.png';
+import SearchingResultImg from '../Assets/Images/searching-result.png';
+import BodyHomeMovie from './BodyHomeMovie';
+import {findImage} from '../Images';
 
-import SearchingPoster1 from '../Assets/Images/searching-poster-1.png'
-import SearchingPoster2 from '../Assets/Images/searching-poster-2.png'
-import SearchingResultImg from '../Assets/Images/searching-result.png'
+function SearchingResultPage({search}) {
+    // const [inputSearch, setInputSearch] = useState('');
+    const [searchList, setSearchList] = useState([]);
+    const [arr, setArr] = useState([]);
+    const [page, setPage] = useState(0);
 
-function SearchingResultPage() {
-    const [inputSearch, setInputSearch] = useState('')
     useEffect(() => {
-        const inputSearch = document.querySelector('.search-input')
-        setInputSearch(inputSearch.getAttribute('value'))
-    })
-
+        if(search !== "") {
+            axios.get(`http://localhost:5000/phim/:${search}`)
+            .then(res => {
+                console.log(res);
+                setSearchList([...res.data.recordset]);
+            })
+            .catch(err => console.log(err));console.log(search)
+        }
+    }, [search]); 
+    
+    useEffect(() => {
+        setArr([...searchList.slice(0, 10)]);
+    }, [searchList])
+    
+    const handlePaging = (index) => {
+        if(index + 1 === Math.ceil(searchList.length/10)) {
+          setArr([...searchList.slice(index*10)]);
+        } else {
+          setArr([...searchList.slice(index*10, index*10 + 10)]);
+        }
+        setPage(index);
+    }
+    
+    const handlePrevious = () => {
+        if(page > 0) handlePaging(page - 1);
+    }
+    
+    const handleNext = () => {
+        if(page < Math.floor(searchList.length/10)) handlePaging(page + 1);
+    }
 
     return (
         <div className="searchingResult-container">
             <div className="searchingResult">
                 <img className="searchingResult__header-image" src={SearchingResultImg} alt=""/>
                 <h2 className="searchingResult__header">KẾT QUẢ TÌM KIẾM</h2>
-                <span className="searchingResult__keyword">Từ khóa: {inputSearch}</span>
-                <div className="searchingResult__result searchingResult__result--movie">
-                    <img className="result__poster" src={SearchingPoster1} alt=""/>
-                        <i className="result__play-button fas fa-play-circle"></i>
-                    <div className="result__information">
-                        <div className="information__top">
-                            <div className="information__starVoting">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="far fa-star"></i>
-                            </div>
-                            <h3 className="information__title">{inputSearch}</h3>
-                            <div className="information__index">13</div>
-                            <button className="information__button information__button--buyTicket">
-                            <i className="fas fa-cart-arrow-down">Mua vé</i>
-                            </button>
-                            <button className="information__button information__button--moreDetails">
-                                <i className="fas fa-info-circle">Xem thêm</i>
-                            </button>
-                        </div>
+                <span className="searchingResult__keyword">Từ khóa: {search}</span>
+                <div className="searchingResult__wrap">
+                    <div className="searchingResult__movies">
+                        {arr.map((item, index) => (
+                            <BodyHomeMovie
+                                key={index}
+                                img={findImage(item.TENPHIM)}
+                                name={item.TENPHIM} 
+                                age={item.DOTUOI} 
+                                type={item.THELOAI}
+                                description={item.MOTA} 
+                            />
+                        ))}
+                    </div>
 
-                        <div className="information__bottom">
-                            <p className="information__category">Tâm lý/Tình cảm</p>
-                            <p className="information__detail"><span>Thời lượng </span>120 phút</p>
-                            <p className="information__detail"><span>Đạo diễn </span>Damien Chazelle</p>
-                            <p className="information__detail"><span>Diễn viên </span>Jenny Wilson, Guy Hawkins, Floyd Miles, Leslie Alexander...</p>
-                        </div>
+                    <div className="bodyHomePageNumber">        
+                        <i className="fas fa-angle-left" onClick={handlePrevious}></i>
+                        <ul className="bodyHomePageNumber_list">
+                        {Array(Math.ceil(searchList.length/10)).fill().map((_, index) => (
+                            <li 
+                            key={index} 
+                            onClick={() => handlePaging(index)}
+                            className={page === index ? "onPage" : ""}
+                            >
+                            {index+1}
+                            </li>
+                        ))}
+                        
+                        </ul>       
+                        <i className="fas fa-angle-right" onClick={handleNext}></i>  
                     </div>
                 </div>
-                <div className="searchingResult__result searchingResult__result--news">
-                    <img className="result__poster" src={SearchingPoster2} alt=""/>
-                    <div className="result__information">
-                        <h3 className="information__title">
-                            <span>{inputSearch} </span>
-                            của Kim Soo Hyun tung poster "vương giả" ngầu ngang Quân Vương Bất Diệt, hứa hẹn bùng nổ cuối tuần?
-                        </h3>
-                        <p className="information__detail">
-                            Aku cocok menggunakan produk night cream white secret dari wardah ini. 
-                            Buat kulit wajahku terasa lembab. Dan membantu juga mencerahkan sih menurutku. 
-                            Tekstur cream tapi tidak begitu thick seperti Day creamnya. Mudah banget diaplikasikan.
-                        </p>
-                        <span className="information__view">
-                            <i className="fas fa-eye">2k</i>
-                        </span>
-                        <span className="information__modified">01/11/2021</span>
-                    </div>
-                </div>
+                
             </div>
         </div>
     )

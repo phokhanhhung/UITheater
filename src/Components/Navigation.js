@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import './Navigation.css'
 import logo from '../Assets/Images/logo.png'
 import { Link } from 'react-router-dom'
 
-function Navigation({handleShowSignIn1, handleShowSignUp1}) {
-    const [inputSearch, setInputSearch] = useState('')
-    
+function Navigation({handleShowSignIn1, handleShowSignUp1, parentSearch}) {
+    const [inputSearch, setInputSearch] = useState('');
+
     useEffect(() => {
         const handleScroll = () => {
             const navigation = document.querySelector('.navigation')
@@ -31,9 +31,7 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
     }
 
     const handleOpenSearch = () => {
-        // const input = document.querySelector('.search-input')
-
-        // console.log(input.getAttribute("value"));
+        parentSearch(inputSearch)
     }
 
     const handleClickNav = () => {
@@ -75,10 +73,10 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
                         <Link to="/phim" className="nav-left-item" onClick={e => handleActive(e)}>PHIM</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item" onClick={e => handleActive(e)}>LỊCH CHIẾU</Link>
+                        <Link to="/lichchieu" className="nav-left-item" onClick={e => handleActive(e)}>LỊCH CHIẾU</Link>
                     </li>
                     <li>
-                        <Link to="/" className="nav-left-item" onClick={e => handleActive(e)}>RẠP & GIÁ VÉ</Link>
+                        <Link to="/rap&giave" className="nav-left-item" onClick={e => handleActive(e)}>RẠP & GIÁ VÉ</Link>
                     </li>
                     <li>
                         <Link to="/news/" className="nav-left-item" onClick={e => handleActive(e)}>TIN TỨC</Link>
@@ -92,7 +90,7 @@ function Navigation({handleShowSignIn1, handleShowSignUp1}) {
             <div className="nav-right" onClick={e => e.stopPropagation()}>
                 <i className="nav-right-search-icon fas fa-search" onClick={handleSearch}></i>
                 <div className="nav-right-search">
-                    <input className="search-input" placeholder="Tìm kiếm" value={inputSearch} onChange={e => setInputSearch(e.target.value)}></input>
+                    <input className="search-input" placeholder="Tìm kiếm" value={inputSearch} onChange={e => setInputSearch(e.target.value)} />
                     <Link to="/searching-page/">
                         <i className="nav-right-search-icon2 fas fa-search" onClick={handleOpenSearch}></i>
                     </Link>

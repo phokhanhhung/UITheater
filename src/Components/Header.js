@@ -5,9 +5,10 @@ import Navigation from './Navigation'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 
-function Header() {
+function Header({handleSearch}) {
     const [showSignIn, setShowSignIn] = useState(false);
     const [showSignUp, setShowSignUp] = useState(false);
+    const [search, setSearch] = useState('');
 
     //Nhấn đăng nhập thì hiện form Sign in
     const childShowSignIn1 = (a) => {
@@ -29,11 +30,24 @@ function Header() {
         setShowSignUp(b);
     }
 
+    const childState = (state) => {
+        setSearch(state);
+    }
+
+    useEffect(() => {
+        handleSearch(search);
+        console.log(search);
+    }, [search]);
+
     return (
         <div className="header">
             <div className="navigation">
                 <div className="wrap">
-                    <Navigation handleShowSignIn1={childShowSignIn1} handleShowSignUp1={childShowSignUp1}/>
+                    <Navigation 
+                        handleShowSignIn1={childShowSignIn1} 
+                        handleShowSignUp1={childShowSignUp1}
+                        parentSearch={childState}
+                    />
                 </div>
             </div>
 

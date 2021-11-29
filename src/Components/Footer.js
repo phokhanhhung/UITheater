@@ -45,13 +45,13 @@ function Footer({childFooterState}) {
 
           <div className="footer_media">
               <ul className="footer_moreInfor">
-                  <li><a href="#" target="_blank">Về UITheater</a></li>
+                  <li><Link to="/">Về UITheater</Link></li>
                   <li className="footer_media_division"></li>
                   <li onClick={() => childFooterState(true)}>Chính sách & quy định</li>
                   <li className="footer_media_division"></li>
                   <li><Link to="/tuyendung">Tuyển dụng</Link></li>
                   <li className="footer_media_division"></li>
-                  <li><a href="#" target="_blank">Liên hệ</a></li>
+                  <li><Link to="/contact">Liên hệ</Link></li>
               </ul>
               <ul className="footer_social">
                   <li><a href="#" target="_blank"><img src={facebook} alt="#" /></a></li>
