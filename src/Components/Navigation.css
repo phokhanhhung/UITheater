@@ -23,8 +23,12 @@
     height: 20px;
     width: 20px;
     z-index: 99;
-    color: #F5859E;
+    color: white;
     margin-left: 10px;
+}
+
+.nav-left-logo-icon:hover {
+    color: #F5859D
 }
 
 .nav-left-list {

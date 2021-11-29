@@ -62,10 +62,10 @@ function Navigation({handleShowSignIn1, handleShowSignUp1, parentSearch}) {
         <div className="nav" onClick={handleClickNav}>
             <div className="nav-left">
                 <a href="/">
-                    <img className="nav-left-logo-img nav-left-item--active" src={logo} alt="logo" />
+                    <img className="nav-left-logo-img" src={logo} alt="logo" />
                 </a>
                 <Link to="/">
-                    <i className="nav-left-logo-icon fas fa-home"></i>
+                    <i className="nav-left-logo-icon fas fa-home nav-left-item--active" onClick={e => handleActive(e)}></i>
                 </Link>
                 
                 <ul className="nav-left-list">
