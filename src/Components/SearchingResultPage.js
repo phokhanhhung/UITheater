@@ -1,11 +1,10 @@
 import  React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './SearchingResultPage.css';
-import SearchingPoster1 from '../Assets/Images/searching-poster-1.png';
-import SearchingPoster2 from '../Assets/Images/searching-poster-2.png';
 import SearchingResultImg from '../Assets/Images/searching-result.png';
 import BodyHomeMovie from './BodyHomeMovie';
 import {findImage} from '../Images';
+import not_found from '../Assets/Images/not-found.jpg';
 
 function SearchingResultPage({search}) {
     // const [inputSearch, setInputSearch] = useState('');
@@ -15,7 +14,7 @@ function SearchingResultPage({search}) {
 
     useEffect(() => {
         if(search !== "") {
-            axios.get(`http://localhost:5000/phim/:${search}`)
+            axios.get(`http://localhost:8000/phim/:${search}`)
             .then(res => {
                 console.log(res);
                 setSearchList([...res.data.recordset]);
@@ -51,7 +50,7 @@ function SearchingResultPage({search}) {
                 <img className="searchingResult__header-image" src={SearchingResultImg} alt=""/>
                 <h2 className="searchingResult__header">KẾT QUẢ TÌM KIẾM</h2>
                 <span className="searchingResult__keyword">Từ khóa: {search}</span>
-                <div className="searchingResult__wrap">
+                {(arr.length>=1) ? <div className="searchingResult__wrap">
                     <div className="searchingResult__movies">
                         {arr.map((item, index) => (
                             <BodyHomeMovie
@@ -81,7 +80,12 @@ function SearchingResultPage({search}) {
                         </ul>       
                         <i className="fas fa-angle-right" onClick={handleNext}></i>  
                     </div>
+                </div> :
+                <div className="searchingResult__not-found">
+                    <img src={not_found} alt="Not_found" />
+                    <h2>Không tìm thấy kết quả khớp với từ khóa. Hãy thử với một từ khác!</h2>
                 </div>
+            }
                 
             </div>
         </div>

@@ -207,4 +207,19 @@
     align-items: center;
     width: 100%;
 }
+
+.searchingResult__not-found {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.searchingResult__not-found > img {
+    object-fit: contain;
+    width: 250px;
+}
+
+.searchingResult__not-found > h2 {
+    font-style: italic;
+    color: turquoise;
+}
   
