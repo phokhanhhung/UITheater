@@ -1,9 +1,8 @@
 import React from 'react';
 import './TheaterGroup2.css';
 import fb from '../Assets/Images/facebook.png';
-import theaterBed from '../Assets/Images/uitheater giường nằm.png';
 
-function TheaterGroup2() {
+function TheaterGroup2({img}) {
   return (
     <div className="theaterGroup2">
       <div className="theaterGroup2__infos">
@@ -21,7 +20,7 @@ function TheaterGroup2() {
           <p>https://www.facebook.com/Dannnnnnnnn1601</p>
         </div>      
       </div>
-      <img src={theaterBed} alt="Movie Theater" />
+      <img src={img} alt="Movie Theater" />
     </div>
   )
 }

@@ -1,11 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import './EmploymentPage.css';
 import Job from './Job';
+import job1 from '../Assets/Images/Job1.png';
+import job2 from '../Assets/Images/Job2.png';
+import job3 from '../Assets/Images/Job3.png';
 
 function EmploymentPage() {
   const [posters, setPosters] = useState([]);
   const [arr, setArr] = useState([]);
   const [page, setPage] = useState(0);
+
+  const jobs = [job1, job2, job3, job1, job2, job3];
 
   useEffect(() => {
     // await axios.get(`/{name}`)
@@ -43,7 +48,7 @@ function EmploymentPage() {
             <div className="employmentPage__jobs">
               {arr.map((_, index) => (
                 <div key={index} className="employmentPage__job">
-                  <Job />
+                  <Job img={jobs[index]}/>
                 </div>
               ))}
             </div>  

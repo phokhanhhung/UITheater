@@ -1,12 +1,11 @@
 import React from 'react';
 import './TheaterGroup1.css';
 import fb from '../Assets/Images/facebook.png';
-import theater from '../Assets/Images/Rectangle 406.png';
 
-function TheaterGroup1() {
+function TheaterGroup1({img}) {
   return (
     <div className="theaterGroup1">
-      <img src={theater} alt="Movie Theater" />
+      <img src={img} alt="Movie Theater" />
       <div className="theaterGroup1__infos">
         <h1>UITHEATER GÒ VẤP</h1>
         <div className="theaterGroup1__address theaterGroup1__info">

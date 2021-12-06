@@ -1,6 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ShowtimePage.css';
 import ShowtimePageMovie from './ShowtimePageMovie';
+import RayaandThelastdragon from '../Assets/Images/raya-12.png';
+import Woderwoman from '../Assets/Images/woderwoman-12.png';
+import Aladdin from '../Assets/Images/aladdin-12.png';
+import BanTayDietQuy from '../Assets/Images/bantaydietquy-12.png';
+import BoGia from '../Assets/Images/bogia-12.png';
+import ChienBinhCuoiCung from '../Assets/Images/chienbinhcuoicung-12.png';
+import Conan from '../Assets/Images/conan-12.png';
+import FreeGuy from '../Assets/Images/freeguy-12.png';
+import KingKong from '../Assets/Images/kinhkong-12.png';
+import LatMat from '../Assets/Images/latmat-12.png';
+import Lalaland from '../Assets/Images/lalaland-12.png';
+import OngNhiPhieuLuuKi from '../Assets/Images/ongnhiphieuluuky-12.png';
 
 let i = 0;
 
@@ -16,6 +28,34 @@ function ShowtimePage() {
 
   const [trans, setTrans] = useState(0);
   const [dateNum, setDateNum] = useState(0);
+
+  const listFilm = [RayaandThelastdragon, Woderwoman, Aladdin, BanTayDietQuy, BoGia, ChienBinhCuoiCung, Conan, FreeGuy, KingKong, LatMat, Lalaland, OngNhiPhieuLuuKi, RayaandThelastdragon, Woderwoman, Aladdin, BanTayDietQuy, BoGia, ChienBinhCuoiCung, Conan, FreeGuy, KingKong, LatMat, Lalaland, OngNhiPhieuLuuKi];
+
+  const arrDate = [
+    {day: "01", month: "12",},
+    {day: "02", month: "12",},
+    {day: "03", month: "12",},
+    {day: "04", month: "12",},
+    {day: "05", month: "12",},
+    {day: "06", month: "12",},
+    {day: "07", month: "12",},
+    {day: "08", month: "12",},
+    {day: "09", month: "12",},
+    {day: "10", month: "12",},
+    {day: "11", month: "12",},
+    {day: "12", month: "12",},
+    {day: "13", month: "12",},
+    {day: "14", month: "12",},
+    {day: "15", month: "12",},
+    {day: "16", month: "12",},
+    {day: "17", month: "12",},
+    {day: "18", month: "12",},
+    {day: "19", month: "12",},
+    {day: "20", month: "12",},
+    {day: "21", month: "12",},
+    {day: "22", month: "12",},
+    {day: "23", month: "12",},
+  ]
 
   const date = useRef();
 
@@ -75,15 +115,15 @@ function ShowtimePage() {
               className="showtimePage__dates" 
               style={{transform: `translateX(-${trans}px)`}}
             >
-              {Array(20).fill().map((item, index) => (
+              {arrDate.map((item, index) => (
                 <div 
                   key={index} 
                   className={dateNum === index ? "showtimePage__date onShow" : "showtimePage__date"}
                   ref={date} 
                   onClick={() => handleDateClick(index)}
                 >
-                  <p>THÁNG 11</p>
-                  <h1>01</h1>
+                  <p>THÁNG {item.month}</p>
+                  <h1>{item.day}</h1>
                 </div>
               ))}
             </div>
@@ -101,7 +141,7 @@ function ShowtimePage() {
               <div className="showtimePage__movies">
                 {arr.map((item, index) => (
                   <div key={index} className="showtimePage__movie" onClick={() => handleDateClick(index)}>
-                    <ShowtimePageMovie />
+                    <ShowtimePageMovie img={listFilm[index]}/>
                   </div>
                 ))}
               </div>
