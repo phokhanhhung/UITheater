@@ -10,7 +10,7 @@ function BodyHomeMovies({name}) {
   const [page, setPage] = useState(0);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/phim')
+    axios.get('http://localhost:5000/phim')
     .then (data => {
       if (data.data.length >= 1) setPosters([...data.data]);
       else alert('Chưa có phim nào')
