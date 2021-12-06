@@ -3,13 +3,20 @@ import Creator from './Creator';
 import './TheaterSystem.css';
 import Dan from '../Assets/Images/Dan.png';
 import ThaoDao from '../Assets/Images/ThaoDao.png';
-import ThienThanh from '../Assets/Images/ThienThanh.png';
+import TheThien from '../Assets/Images/TheThien.png';
 import TuanLe from '../Assets/Images/TuanLe.png';
 import HungPho from '../Assets/Images/HungPho.png';
 import TheaterGroup1 from './TheaterGroup1';
 import TheaterGroup2 from './TheaterGroup2';
+import system1 from '../Assets/Images/Rectangle 406.png';
+import system2 from '../Assets/Images/uitheater giường nằm.png';
+import system3 from '../Assets/Images/uitheater max hd.png';
+import system4 from '../Assets/Images/uitheater bình dương.png';
+import system5 from '../Assets/Images/uitheater sinh viên.png';
 
 function TheaterSystem() {
+
+  const listSystems = [system1, system2, system3, system4, system5];
 
   const creators = [{
     img: Dan,
@@ -27,8 +34,8 @@ function TheaterSystem() {
     position: "Marketing & Entertainment",
     color: "#E25050",
   }, {
-    img: ThienThanh,
-    name: "Thiên Thanh",
+    img: TheThien,
+    name: "Thế Thiện",
     position: "Studios & Distribution",
     color: "#D1A67C",
   }, {
@@ -36,7 +43,7 @@ function TheaterSystem() {
     name: "Hưng Phò",
     position: "Cinemas & Service",
     color: "#F5859E",
-  }]
+  }];
 
   return (
     <div className="theaterSystem">
@@ -60,11 +67,11 @@ function TheaterSystem() {
 
       <h2>CỤM RẠP</h2>
       <div className="theaterSystem__group">
-        <TheaterGroup1 />
-        <TheaterGroup2 />
-        <TheaterGroup1 />
-        <TheaterGroup2 />
-        <TheaterGroup1 />
+        <TheaterGroup1 img={listSystems[0]}/>
+        <TheaterGroup2 img={listSystems[1]}/>
+        <TheaterGroup1 img={listSystems[2]}/>
+        <TheaterGroup2 img={listSystems[3]}/>
+        <TheaterGroup1 img={listSystems[4]}/>
       </div>
     </div>
   )

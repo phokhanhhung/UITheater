@@ -1,11 +1,10 @@
 import React from 'react';
 import './Job.css';
-import job from '../Assets/Images/employment.png';
 
-function Job() {
+function Job({img}) {
   return (
     <div className="job">
-      <img src={job} alt="Job image" />
+      <img src={img} alt="Job image" />
       <div className="job__info-background-color">
         <div className="job__info">
           <h4>TUYỂN DỤNG NHÂN VIÊN KĨ THUẬT</h4>

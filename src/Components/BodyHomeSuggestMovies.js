@@ -2,6 +2,18 @@ import React, { useEffect, useRef } from 'react';
 import "./BodyHomeSuggestMovies.css";
 import BodyHomeSuggestMovie from './BodyHomeSuggestMovie';
 import { useState } from 'react';
+import RayaandThelastdragon from '../Assets/Images/raya-12.png';
+import Woderwoman from '../Assets/Images/woderwoman-12.png';
+import Aladdin from '../Assets/Images/aladdin-12.png';
+import BanTayDietQuy from '../Assets/Images/bantaydietquy-12.png';
+import BoGia from '../Assets/Images/bogia-12.png';
+import ChienBinhCuoiCung from '../Assets/Images/chienbinhcuoicung-12.png';
+import Conan from '../Assets/Images/conan-12.png';
+import FreeGuy from '../Assets/Images/freeguy-12.png';
+import KingKong from '../Assets/Images/kinhkong-12.png';
+import LatMat from '../Assets/Images/latmat-12.png';
+import Lalaland from '../Assets/Images/lalaland-12.png';
+import OngNhiPhieuLuuKi from '../Assets/Images/ongnhiphieuluuky-12.png';
 
 function BodyHomeSuggestMovies() {
   const [trans, setTrans] = useState(0);
@@ -9,6 +21,7 @@ function BodyHomeSuggestMovies() {
   const [number, setNumber] = useState(0);
 
   // console.log(num, "outside");
+  const listFilm = [RayaandThelastdragon, Woderwoman, Aladdin, BanTayDietQuy, BoGia, ChienBinhCuoiCung, Conan, FreeGuy, KingKong, LatMat, Lalaland, OngNhiPhieuLuuKi, RayaandThelastdragon, Woderwoman, Aladdin, BanTayDietQuy, BoGia, ChienBinhCuoiCung, Conan, FreeGuy, KingKong, LatMat, Lalaland, OngNhiPhieuLuuKi];
 
   const move = useRef();
   const movie = useRef();
@@ -51,10 +64,11 @@ function BodyHomeSuggestMovies() {
             className="bodyHomeSuggest_list" 
             style={{left: trans+"px"}}
           >
-            {Array(25).fill().map((_, index) => (
+            {listFilm.map((item, index) => (
               <li key={index}>
                 <BodyHomeSuggestMovie
                   ref={movie}
+                  img={item}
                 />
               </li>
             ))}  

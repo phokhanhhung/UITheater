@@ -8,6 +8,8 @@ import Conan from './Assets/Images/conan-12.png';
 import FreeGuy from './Assets/Images/freeguy-12.png';
 import KingKong from './Assets/Images/kinhkong-12.png';
 import LatMat from './Assets/Images/latmat-12.png';
+import Lalaland from './Assets/Images/lalaland-12.png';
+import OngNhiPhieuLuuKi from './Assets/Images/ongnhiphieuluuky-12.png';
 
 const image = [
   {name: "Raya and The last dragon", src: RayaandThelastdragon}, 
@@ -20,6 +22,8 @@ const image = [
   {name: "Thám tử lừng danh Conan", src: Conan},
   {name: "King Kong", src: KingKong},
   {name: "Lật mặt", src: LatMat},
+  {name: "Ong nhí phiêu lưu kí", src: OngNhiPhieuLuuKi},
+  {name: "Lalaland", src: Lalaland}
 ]; 
 
 const findImage = (name) => {

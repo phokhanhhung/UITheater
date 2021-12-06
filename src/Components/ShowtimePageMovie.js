@@ -1,11 +1,10 @@
 import React from 'react';
 import './ShowtimePageMovie.css';
-import wonderwoman from '../Assets/Images/woderwoman-12.png';
 
-function ShowtimePageMovie() {
+function ShowtimePageMovie({img}) {
   return (
     <div className="showtimePageMovie">
-      <img src={wonderwoman} alt="Poster" />
+      <img src={img} alt="Poster" />
       <div className="showtimePageMovie__info">
         <div className="showtimePageMovie__info-background-color">
           <h4>WONDER WOMAN</h4>
