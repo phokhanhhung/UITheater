@@ -11,7 +11,14 @@ import NewsTrailer from './NewsTrailer'
 import NewsTrending from './NewsTrending'
 import NewsAds from './NewsAds'
 
+let i = 0;
+
 function News() {
+    if (i === 0) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        i++;
+      }
     const [newsLatest, setNewsLatest] = useState([])
     const [arr, setArr] = useState()
 
@@ -68,7 +75,7 @@ function News() {
                             arr?.map((_, index) => (
                                 <NewsLatestItem 
                                     key={index}
-                                    src={NewsLatestItemImg}
+                                    index={index}
                                     title='Điên Thì Có Sao của Kim Soo Hyun tung poster "vương giả" ngầu ngang Quân Vương Bất Diệt, hứa hẹn bùng nổ cuối tuần?'
                                     desc="Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lembab. Dan membantu juga mencerahkan sih menurutku. Tekstur cream tapi tidak begitu thick seperti Day creamnya. Mudah banget diaplikasikan."
                                     viewer="2k"

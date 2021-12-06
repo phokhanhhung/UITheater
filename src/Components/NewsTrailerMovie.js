@@ -1,7 +1,7 @@
 import React from 'react'
 import './NewsTrailerMovie.css'
 
-function NewsTrailerMovie({name, category, duration, width, height, widthCate, fontSizeName}) {
+function NewsTrailerMovie({name, category, duration, width, height, widthCate, fontSizeName, src}) {
     const handleOpenTrailer = () => {
         const trailerMovie = document.querySelector('.bodyHomeMovie-more-trailer-movie')
         const trailer = document.querySelector('.bodyHomeMovie-more-trailer')
@@ -15,7 +15,7 @@ function NewsTrailerMovie({name, category, duration, width, height, widthCate, f
     }
 
     return (
-        <div className="news-trailer-movie" style={{width:width, height:height + 'px'}} onClick={handleOpenTrailer}>
+        <div className="news-trailer-movie" style={{width:width, height:height + 'px', backgroundImage:`url(${src})`}} onClick={handleOpenTrailer}>
             <i className="news-trailer-movie-icon far fa-play-circle"></i>
             <div>
                 <p className="news-trailer-movie-category" style={{width:widthCate}}>{category}</p>

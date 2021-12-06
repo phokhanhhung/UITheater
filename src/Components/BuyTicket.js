@@ -11,7 +11,14 @@ import mastercard from '../Assets/Images/Master-Card-icon 1.png';
 import jbc from '../Assets/Images/JCB_logo 1.png';
 import aladdin from '../Assets/Images/aladdin-12.png';
 
+let i = 0;
+
 function BuyTicket() {
+  if (i === 0) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    i++;
+  }
 
   const [isTick,setIsTick] = useState(true);
 

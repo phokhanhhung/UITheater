@@ -7,7 +7,14 @@ import Contact2 from '../Assets/Images/Contact-2.png'
 import CustomerIcon from '../Assets/Images/customer-icon.png'
 import TradeIcon from '../Assets/Images/trade-icon.png'
 
+let i = 0;
+
 function Contact() {
+    if (i === 0) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        i++;
+      }
     return (
         <div>
             <div className="contact-container">

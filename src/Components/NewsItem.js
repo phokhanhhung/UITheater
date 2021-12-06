@@ -8,7 +8,15 @@ import num1 from '../Assets/Images/Untitled-1-03.png'
 import img1 from '../Assets/Images/lalaland-12.png'
 import adsImg from '../Assets/Images/news-latest-item-ads.png'
 
+let i = 0;
+
 function NewsItem() {
+    if (i === 0) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        i++;
+    }
+
     return (
         <div className="news-item">
             <img src={backgroundNewsItem} alt="background" className="news-item-background" />

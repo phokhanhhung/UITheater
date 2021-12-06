@@ -14,7 +14,7 @@ function SearchingResultPage({search}) {
 
     useEffect(() => {
         if(search !== "") {
-            axios.get(`http://localhost:8000/phim/:${search}`)
+            axios.get(`http://localhost:5000/phim/:${search}`)
             .then(res => {
                 console.log(res);
                 setSearchList([...res.data.recordset]);

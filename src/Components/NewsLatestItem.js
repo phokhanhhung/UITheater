@@ -1,12 +1,28 @@
 import React from 'react'
 import './NewsLatestItem.css'
 import { Link } from 'react-router-dom'
+import backgroundNewsItem7 from '../Assets/Images/news-item-background.png'
+import backgroundNewsItem1 from '../Assets/Images/poster-trailer.png'
+import backgroundNewsItem2 from '../Assets/Images/Raya_and_the_Last_Dragon_logo.png'
+import backgroundNewsItem3 from '../Assets/Images/news-item-background.png'
+import backgroundNewsItem4 from '../Assets/Images/searching-poster-2.png'
+import backgroundNewsItem5 from '../Assets/Images/service-opera.png'
+import backgroundNewsItem6 from '../Assets/Images/posterrayawallpaper.png'
 
-function NewsLatestItem({src, title, desc, viewer, time}) {
+function NewsLatestItem({title, desc, viewer, time, index}) {
+    
+    const listImages = [backgroundNewsItem7, 
+                        backgroundNewsItem1,
+                        backgroundNewsItem2, 
+                        backgroundNewsItem3,
+                        backgroundNewsItem4,
+                        backgroundNewsItem5, 
+                        backgroundNewsItem6,]
+
     return (
         <div className="news-latest-item">
-                <img src={src} alt="img" className="news-latest-item-img" />
-                <Link to="/news-item/">
+                <img src={listImages[index]} alt="img" className="news-latest-item-img" />
+                <Link to="/news-item/" index={index}>
                     <div className="news-latest-item-wrapper">
                         <p className="news-latest-item-title">{title}</p>
                         <p className="news-latest-item-desc">{desc}</p>

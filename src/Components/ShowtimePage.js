@@ -2,8 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import './ShowtimePage.css';
 import ShowtimePageMovie from './ShowtimePageMovie';
 
-function ShowtimePage() {
+let i = 0;
 
+function ShowtimePage() {
+  if (i === 0) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    i++;
+  }
   const [posters, setPosters] = useState([]);
   const [arr, setArr] = useState([]);
   const [page, setPage] = useState(0);

@@ -6,8 +6,13 @@ import { Route } from 'react-router';
 import TheaterSystem from './TheaterSystem';
 import TheaterService from './TheaterService';
 import TheaterTechnology from './TheaterTechnology';
-
+let i = 0;
 function TheaterIntro() {
+  if (i === 0) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    i++;
+  }
   return (
     <div className="theaterIntro-background-color1">
       <div className="theaterIntro-background-img">

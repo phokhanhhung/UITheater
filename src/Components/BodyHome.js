@@ -6,9 +6,14 @@ import BodyHomeMovies from './BodyHomeMovies';
 import BodyHomeSuggest from './BodyHomeSuggest';
 import MovieIntro from './MovieIntro'
 import HotMovies from './HotMovies'
-
+let i = 0;
 
 function BodyHome() {
+  if (i === 0) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    i++;
+  }
   return (
     <div className="bodyHome-wrapper">
       <div className="movie-intro-wrapper">

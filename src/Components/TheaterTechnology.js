@@ -3,8 +3,12 @@ import './TheaterTechnology.css'
 import TheaterTechnologyItem from './TheaterTechnologyItem'
 
 import TheaterTechnologyItemImage from '../Assets/Images/theater-technology-item.png'
+import TheaterTechnologyItemImage2 from '../Assets/Images/theater-technology-item-2.png'
+import TheaterTechnologyItemImage3 from '../Assets/Images/theater-technology-item-3.png'
+import TheaterTechnologyItemImage4 from '../Assets/Images/theater-technology-item-4.png'
 
 function TheaterTechnology() {
+
     return (
         <div className="theater-technology">
             <TheaterTechnologyItem 
@@ -16,21 +20,21 @@ function TheaterTechnology() {
                       ]}
             />
             <TheaterTechnologyItem 
-                src={TheaterTechnologyItemImage}
+                src={TheaterTechnologyItemImage2}
                 title="SWEET BOX"
                 desc={['Cinestar có thể mang đến cho bạn những giây phút thư giãn cùng những bộ phim hấp dẫn trong không gian nhẹ nhàng, ấm áp cùng người yêu thương và gia đình. Hãy tận hưởng những giây phút ngọt ngào nhất tại UITheater bằng ghế đôi Sweet Box.', 
                        'Sweet Box được đặt ở hàng ghế cuối cùng trong phòng chiếu. Với vách ngăn cao cũng như sự khéo léo trong thiết kế giấu đi tay gác chính giữa giúp cho đôi bạn càng thêm gần gũi và ấm áp, tạo không gian hoàn hảo cho các cặp đôi. Hãy đến và trải nghiệm không gian hoàn hảo của các tình yêu với Sweet Box'
                       ]}
             />
             <TheaterTechnologyItem 
-                src={TheaterTechnologyItemImage}
+                src={TheaterTechnologyItemImage3}
                 title="DOLBY ATMOS"
                 desc={['Cinestar có thể mang đến cho bạn những giây phút thư giãn cùng những bộ phim hấp dẫn trong không gian nhẹ nhàng, ấm áp cùng người yêu thương và gia đình. Hãy tận hưởng những giây phút ngọt ngào nhất tại UITheater bằng ghế đôi Sweet Box.', 
                        'Sweet Box được đặt ở hàng ghế cuối cùng trong phòng chiếu. Với vách ngăn cao cũng như sự khéo léo trong thiết kế giấu đi tay gác chính giữa giúp cho đôi bạn càng thêm gần gũi và ấm áp, tạo không gian hoàn hảo cho các cặp đôi. Hãy đến và trải nghiệm không gian hoàn hảo của các tình yêu với Sweet Box'
                       ]}
             />
             <TheaterTechnologyItem 
-                src={TheaterTechnologyItemImage}
+                src={TheaterTechnologyItemImage4}
                 title="MÁY CHIẾU BARCO"
                 desc={['Cinestar có thể mang đến cho bạn những giây phút thư giãn cùng những bộ phim hấp dẫn trong không gian nhẹ nhàng, ấm áp cùng người yêu thương và gia đình. Hãy tận hưởng những giây phút ngọt ngào nhất tại UITheater bằng ghế đôi Sweet Box.', 
                        'Sweet Box được đặt ở hàng ghế cuối cùng trong phòng chiếu. Với vách ngăn cao cũng như sự khéo léo trong thiết kế giấu đi tay gác chính giữa giúp cho đôi bạn càng thêm gần gũi và ấm áp, tạo không gian hoàn hảo cho các cặp đôi. Hãy đến và trải nghiệm không gian hoàn hảo của các tình yêu với Sweet Box'

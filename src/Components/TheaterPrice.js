@@ -3,7 +3,14 @@ import './TheaterPrice.css';
 import theater from '../Assets/Images/TheaterPrice-theater.png';
 import ticket from '../Assets/Images/Bang gia ve Quoc Thanh 2D 102017 2.png';
 
+let i = 0;
+
 function TheaterPrice() {
+  if (i === 0) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    i++;
+  }
   return (
     <div className="cinema__ticket">
       <div className="cinema__ticket-container">

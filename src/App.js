@@ -68,7 +68,7 @@ function App() {
             <Route path="/lichchieu"><ShowtimePage /></Route>
             <Route path="/categories"><AllMovies /></Route>
             <Route path="/news/"><News /></Route>
-            <Route path="/news-item/"><NewsItem /></Route>
+            <Route path="/news-item/"><NewsItem/></Route>
             <Route path="/datve"><BuyTicket /></Route>
             <Route path="/tuyendung"><EmploymentPage /></Route>
             <Route path="/rap&giave"><TheaterPrice /></Route>

@@ -1,5 +1,22 @@
 import React from 'react'
-import NewsTrendingItemImg from '../Assets/Images/news-trending-item-image.png'
+import NewsTrendingItemImg_0 from '../Assets/Images/news-trending-item-image.png'
+import NewsTrendingItemImg_1 from '../Assets/Images/Raya_and_the_Last_Dragon_logo.png'
+import NewsTrendingItemImg_2 from '../Assets/Images/news-ads-poster.png'
+import NewsTrendingItemImg_3 from '../Assets/Images/searching-poster-2.png'
+import NewsTrendingItemImg_4 from '../Assets/Images/service-opera.png'
+import NewsTrendingItemImg_5 from '../Assets/Images/posterrayawallpaper.png'
+import NewsTrendingItemImg_6 from '../Assets/Images/Raya_and_the_Last_Dragon_logo.png'
+import NewsTrendingItemImg_7 from '../Assets/Images/news-trending-item-image.png'
+import NewsTrendingItemImg_8 from '../Assets/Images/Raya_and_the_Last_Dragon_logo.png'
+import NewsTrendingItemImg_9 from '../Assets/Images/news-ads-poster.png'
+import NewsTrendingItemImg_10 from '../Assets/Images/searching-poster-2.png'
+import NewsTrendingItemImg_11 from '../Assets/Images/service-opera.png'
+import NewsTrendingItemImg_12 from '../Assets/Images/posterrayawallpaper.png'
+import NewsTrendingItemImg_13 from '../Assets/Images/Raya_and_the_Last_Dragon_logo.png'
+import NewsTrendingItemImg_14 from '../Assets/Images/searching-poster-2.png'
+import NewsTrendingItemImg_15 from '../Assets/Images/service-opera.png'
+import NewsTrendingItemImg_16 from '../Assets/Images/posterrayawallpaper.png'
+import NewsTrendingItemImg_17 from '../Assets/Images/Raya_and_the_Last_Dragon_logo.png'
 import './NewsTrendingBottom.css'
 
 import NewsTrendingItem from './NewsTrendingItem'
@@ -7,6 +24,25 @@ import NewsTrendingItem from './NewsTrendingItem'
 import {useState, useEffect, useRef} from 'react'
 
 function NewsTrendingBottom() {
+    const listImages = [NewsTrendingItemImg_0, 
+                        NewsTrendingItemImg_1, 
+                        NewsTrendingItemImg_2, 
+                        NewsTrendingItemImg_3, 
+                        NewsTrendingItemImg_4, 
+                        NewsTrendingItemImg_5, 
+                        NewsTrendingItemImg_6, 
+                        NewsTrendingItemImg_7, 
+                        NewsTrendingItemImg_8, 
+                        NewsTrendingItemImg_9, 
+                        NewsTrendingItemImg_10, 
+                        NewsTrendingItemImg_11, 
+                        NewsTrendingItemImg_12, 
+                        NewsTrendingItemImg_13, 
+                        NewsTrendingItemImg_14, 
+                        NewsTrendingItemImg_15, 
+                        NewsTrendingItemImg_16, 
+                        NewsTrendingItemImg_17]
+
     const [trendingFilms, setTrendingFilms] = useState([]);
     const [arr, setArr] = useState([]);
     const [trans, setTrans] = useState(0);
@@ -54,7 +90,7 @@ function NewsTrendingBottom() {
                             arr.map((_, index) => (
                                 <NewsTrendingItem
                                     key={index}
-                                    src={NewsTrendingItemImg}
+                                    src={listImages[index]}
                                     title='Điên Thì Có Sao tung poster "vương giả" ngầu ngang Quân Vương Bất Diệt, hứa hẹn bùng nổ cuối tuần?'
                                     time="01/11/2021"
                                     viewer="2k"
